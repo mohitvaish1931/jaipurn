@@ -1,13 +1,18 @@
 import { Link } from 'react-router-dom';
 
 const treatments = [
-  { id: 'retina', title: 'Vitreoretinal Services', desc: 'Expert care for Retinal Detachment and Diabetic Retinopathy.' },
-  { id: 'cataract', title: 'Cataract', desc: 'Safe, effective surgical options to restore your sight.' },
-  { id: 'glaucoma', title: 'Glaucoma', desc: 'Protect your vision with early detection and expert care.' },
-  { id: 'laser', title: 'Laser Treatments', desc: 'Safe, advanced LASIK and laser vision correction for specs removal.' },
-  { id: 'cornea', title: 'Cornea Disorders', desc: 'Keratoconus management and corneal transplants.' },
-  { id: 'oculoplasty', title: 'Oculoplasty', desc: 'Ptosis correction, blocked tear ducts, and aesthetic eyelid surgery.' },
-  { id: 'pediatric', title: 'Pediatric Ophthalmology', desc: 'Early detection is vital for lifelong clear vision.' }
+  { id: 'retinal-detachment', title: 'Retinal Detachment', desc: 'Expert surgical care and repair for detached retinas.' },
+  { id: 'diabetic-retinopathy', title: 'Diabetic Retinopathy', desc: 'Advanced screening and treatment for diabetic eye disease.' },
+  { id: 'retinal-laser', title: 'Retinal Laser', desc: 'Precision laser therapies for various retinal conditions.' },
+  { id: 'cataract', title: 'Intraocular Lens - Cataract Surgery', desc: 'MICS technology • Monofocal, Toric & Multifocal lenses.' },
+  { id: 'tuberculosis', title: 'Ocular Tuberculosis', desc: 'Diagnosis and management of eye inflammation linked to TB.' },
+  { id: 'glaucoma', title: 'Retinal Problems and Glaucoma', desc: 'Early detection and management of glaucoma and retina issues.' },
+  { id: 'rop', title: 'Retinopathy of Prematurity (ROP)', desc: 'Specialized screening and care for premature infants.' },
+  { id: 'computer-vision-syndrome', title: 'Computer Vision Syndrome', desc: 'Relief from digital eye strain and comprehensive vision care.' },
+  { id: 'cornea', title: 'Cornea Disorders', desc: 'Keratoconus using CXL • Pterygium surgery with autograft.' },
+  { id: 'oculoplasty', title: 'Occuloplasty', desc: 'Management of Ptosis, Entropion, and Ectropion.' },
+  { id: 'trauma', title: 'Ocular Trauma', desc: '24/7 emergency care and specialized surgical management.' },
+  { id: 'industrial-trauma', title: 'Industrial Trauma Management', desc: 'Expert emergency response for workplace eye injuries.' }
 ];
 
 export default function Treatments() {

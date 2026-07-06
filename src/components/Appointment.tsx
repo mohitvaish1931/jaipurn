@@ -1,6 +1,28 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 
+const InputField = ({ id, type = 'text', placeholder, value, onChange, onFocus, onBlur, isFocused }: any) => (
+  <div className="relative mb-12">
+    <input
+      type={type}
+      id={id}
+      value={value}
+      onChange={(e) => onChange(id, e.target.value)}
+      onFocus={() => onFocus(id)}
+      onBlur={() => onBlur(null)}
+      className="w-full bg-transparent border-b border-slate-200 focus:border-transparent text-slate-900 pb-4 outline-none transition-all placeholder-slate-400 font-sans text-xl font-light"
+      placeholder={placeholder}
+      required
+    />
+    <motion.div 
+      className="absolute bottom-0 left-0 h-[1px] bg-accent-500 z-10"
+      initial={{ width: '0%' }}
+      animate={{ width: isFocused ? '100%' : '0%' }}
+      transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+    />
+  </div>
+);
+
 export default function Appointment() {
   const [focusedField, setFocusedField] = useState<string | null>(null);
   const [formData, setFormData] = useState({
@@ -30,28 +52,6 @@ export default function Appointment() {
     window.open(`https://wa.me/${whatsappNumber}?text=${text}`, '_blank');
   };
 
-  const InputField = ({ id, type = 'text', placeholder }: any) => (
-    <div className="relative mb-12">
-      <input
-        type={type}
-        id={id}
-        value={(formData as any)[id]}
-        onChange={(e) => handleChange(id, e.target.value)}
-        onFocus={() => setFocusedField(id)}
-        onBlur={() => setFocusedField(null)}
-        className="w-full bg-transparent border-b border-slate-200 focus:border-transparent text-slate-900 pb-4 outline-none transition-all placeholder-slate-400 font-sans text-xl font-light"
-        placeholder={placeholder}
-        required
-      />
-      <motion.div 
-        className="absolute bottom-0 left-0 h-[1px] bg-accent-500 z-10"
-        initial={{ width: '0%' }}
-        animate={{ width: focusedField === id ? '100%' : '0%' }}
-        transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-      />
-    </div>
-  );
-
   return (
     <section className="py-40 bg-surface relative overflow-hidden" id="booking">
       <div className="container mx-auto px-6 relative z-10">
@@ -70,6 +70,7 @@ export default function Appointment() {
               <div>
                 <p className="font-sans text-xs tracking-[0.2em] uppercase text-slate-500 mb-2">Direct Line</p>
                 <p className="font-display text-2xl text-slate-900">+91 98288 92342</p>
+                <p className="font-display text-2xl text-slate-900 mt-1">+91 97997 72342</p>
               </div>
               <div>
                 <p className="font-sans text-xs tracking-[0.2em] uppercase text-slate-500 mb-2">OPD Timings</p>
@@ -82,11 +83,11 @@ export default function Appointment() {
           <div className="lg:col-span-7">
             <div className="bg-white/50 backdrop-blur-3xl p-12 md:p-16 rounded-[2rem] border border-slate-200">
               <form onSubmit={handleSubmit}>
-                <InputField id="name" placeholder="Legal Full Name" />
-                <InputField id="phone" placeholder="Contact Number" />
+                <InputField id="name" placeholder="Legal Full Name" value={formData.name} onChange={handleChange} onFocus={setFocusedField} onBlur={setFocusedField} isFocused={focusedField === 'name'} />
+                <InputField id="phone" placeholder="Contact Number" value={formData.phone} onChange={handleChange} onFocus={setFocusedField} onBlur={setFocusedField} isFocused={focusedField === 'phone'} />
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12">
-                  <InputField id="date" type="text" placeholder="Preferred Date (DD/MM)" />
-                  <InputField id="time" type="text" placeholder="Time Frame" />
+                  <InputField id="date" type="text" placeholder="Preferred Date (DD/MM)" value={formData.date} onChange={handleChange} onFocus={setFocusedField} onBlur={setFocusedField} isFocused={focusedField === 'date'} />
+                  <InputField id="time" type="text" placeholder="Time Frame" value={formData.time} onChange={handleChange} onFocus={setFocusedField} onBlur={setFocusedField} isFocused={focusedField === 'time'} />
                 </div>
                 
                 <div className="relative mb-16 mt-8">

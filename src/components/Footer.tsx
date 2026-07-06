@@ -4,14 +4,13 @@ export default function Footer() {
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
           <div className="col-span-1 md:col-span-2">
-            <span className="font-display text-2xl font-medium text-slate-900 tracking-tight block mb-6">
-              Jaipur Netralaya<span className="text-accent-500 text-3xl leading-none">.</span>
-            </span>
+            <img src="/1000262746.png" alt="Jaipur Netralaya Logo" className="h-32 md:h-40 w-auto object-contain mb-6" />
             <p className="text-slate-600 font-sans font-light max-w-sm mb-8">
               160 A, Gopalpura Bypass Rd, opposite Tilak public school, Vishveshariya Nagar, Jaipur, Rajasthan 302018
             </p>
             <div className="flex flex-col gap-2">
               <a href="tel:9828892342" className="text-slate-900 font-display text-xl hover:text-accent-500 transition-colors">+91 98288 92342</a>
+              <a href="tel:9799772342" className="text-slate-900 font-display text-xl hover:text-accent-500 transition-colors">+91 97997 72342</a>
               <span className="text-slate-500 text-sm font-sans uppercase tracking-widest">Emergency Call Available</span>
             </div>
           </div>

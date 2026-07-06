@@ -89,15 +89,7 @@ export default function Hero() {
 
       {/* Hero Content */}
       <div className="hero-content relative z-20 container mx-auto px-6 text-center lg:text-left flex flex-col items-center lg:items-start pointer-events-none will-change-transform">
-        <motion.div
-          initial={{ y: 50, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 1.2, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
-          className="inline-flex items-center gap-3 px-4 py-2 rounded-full border border-slate-200 bg-white shadow-sm border border-slate-200 backdrop-blur-md mb-8"
-        >
-          <span className="w-2 h-2 rounded-full bg-accent-500 animate-pulse"></span>
-          <span className="text-xs font-semibold tracking-[0.2em] uppercase text-slate-800 font-sans">Your Vision, Our Priority</span>
-        </motion.div>
+
 
         <motion.h1 
           initial={{ y: 50, opacity: 0 }}
@@ -105,9 +97,9 @@ export default function Hero() {
           transition={{ duration: 1.2, delay: 0.7, ease: [0.16, 1, 0.3, 1] }}
           className="font-display text-6xl md:text-8xl lg:text-[140px] font-medium text-slate-900 mb-6 leading-[0.9] tracking-[-0.02em]"
         >
-          Vision <br/>
+          Jaipur Netralaya <br/>
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-slate-900 via-accent-600 to-accent-500">
-            Redefined.
+            Eye & Retina Centre.
           </span>
         </motion.h1>
 
@@ -117,7 +109,7 @@ export default function Hero() {
           transition={{ duration: 1.2, delay: 0.9, ease: [0.16, 1, 0.3, 1] }}
           className="text-xl md:text-2xl text-slate-600 font-sans max-w-2xl font-light mb-12"
         >
-          Advanced Diagnostics, Surgical Precision & Compassionate Care. We are dedicated to preserving and restoring your vision by combining world-class surgical expertise and advanced technology.
+          Experience comprehensive ophthalmic services at Jaipur's leading eye care facility. Specializing in advanced retina care, cataract surgery, strabismus treatment, and vision therapy with a patient-centric approach.
         </motion.p>
 
         <motion.button

@@ -4,6 +4,8 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import TreatmentDetails from './pages/TreatmentDetails';
 
+import Insurance from './pages/Insurance';
+
 function App() {
   return (
     <Router>
@@ -12,6 +14,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/treatments/:id" element={<TreatmentDetails />} />
+          <Route path="/insurance" element={<Insurance />} />
         </Routes>
         <Footer />
       </main>

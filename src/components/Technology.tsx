@@ -21,14 +21,17 @@ export default function Technology() {
       <div className="container mx-auto px-6 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
           
-          <div className="order-2 lg:order-1 relative rounded-[2rem] overflow-hidden aspect-[4/5] border border-slate-200">
-            <motion.div style={{ y: imageY }} className="absolute inset-[-10%] w-[120%] h-[120%] will-change-transform">
-              <img 
-                src="/assets/futuristic_surgery.png" 
-                alt="Advanced Surgery Tech" 
-                className="w-full h-full object-cover"
+          <div className="order-2 lg:order-1 relative rounded-[2rem] overflow-hidden aspect-[3/4] md:aspect-[4/5] border border-slate-200 shadow-xl">
+            <motion.div style={{ y: imageY }} className="absolute inset-[-30%] w-[160%] h-[160%] will-change-transform flex items-center justify-center">
+              <video 
+                src="/WhatsApp Video 2026-07-05 at 15.39.21.mp4" 
+                autoPlay 
+                loop 
+                muted 
+                playsInline
+                className="w-full h-full object-cover -rotate-90"
               />
-              <div className="absolute inset-0 bg-background/20 mix-blend-multiply"></div>
+              <div className="absolute inset-0 bg-background/20 mix-blend-multiply pointer-events-none"></div>
             </motion.div>
             
             {/* Cinematic Overlay */}

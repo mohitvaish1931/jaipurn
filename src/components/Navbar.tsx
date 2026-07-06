@@ -15,7 +15,7 @@ export default function Navbar() {
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-700 ease-[0.16,1,0.3,1] ${scrolled ? 'bg-background/80 backdrop-blur-3xl border-b border-slate-200 py-6' : 'bg-transparent py-10'}`}>
       <div className="container mx-auto px-6 flex items-center justify-between">
         <a href="#" className="flex items-center gap-2 group">
-          <span className="font-display text-2xl font-medium text-slate-900 tracking-tight">Jaipur Netralaya<span className="text-accent-500 text-3xl leading-none">.</span></span>
+          <img src="/1000262746.png" alt="Jaipur Netralaya Logo" className="h-24 md:h-28 w-auto object-contain" />
         </a>
 
         <div className="hidden md:flex items-center gap-12">

@@ -4,7 +4,7 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 const milestones = [
   { year: '18+', title: 'Years Experience', desc: 'A legacy of preserving and restoring vision with compassionate care.' },
   { year: '#1', title: 'Largest Retina Hospital', desc: 'The largest and most trusted retina hospital in Rajasthan.' },
-  { year: '1L+', title: 'Retina Surgeries', desc: 'A milestone of trust. Over one hundred thousand retina surgeries and laser procedures performed.' },
+  { year: '10k+', title: 'Retina Surgeries', desc: 'A milestone of trust. Over ten thousand retina surgeries and laser procedures performed.' },
   { year: '50k+', title: 'Cataract Surgeries', desc: 'Delivering expert, patient-focused care with advanced technology.' },
 ];
 

@@ -2,13 +2,91 @@ import { useParams, Link } from 'react-router-dom';
 import { useEffect } from 'react';
 
 const treatmentsData = {
-  'retina': { title: 'Vitreoretinal Services', desc: 'Expert care for Retinal Detachment and Diabetic Retinopathy.', fullDesc: 'Our vitreoretinal services provide advanced diagnostic and surgical care for complex conditions affecting the back of the eye. Utilizing state-of-the-art sub-micron scanning and robotic assistance, our world-class surgeons effectively treat retinal detachments, macular degeneration, and diabetic retinopathy with unprecedented precision.' },
-  'cataract': { title: 'Cataract', desc: 'Safe, effective surgical options to restore your sight.', fullDesc: 'We offer advanced micro-incision cataract surgery (MICS) with premium intraocular lenses (IOLs). The procedure is painless, minimally invasive, and designed to restore crystal clear vision. Our patients typically experience incredibly rapid recovery times, returning to their daily lives almost immediately.' },
-  'glaucoma': { title: 'Glaucoma', desc: 'Protect your vision with early detection and expert care.', fullDesc: 'Glaucoma is a silent condition that damages the optic nerve. Our specialized glaucoma clinic utilizes advanced predictive algorithms and automated perimetry to catch anomalies before they manifest. We offer a full spectrum of treatments including medical management, advanced laser therapies, and specialized micro-invasive glaucoma surgery (MIGS).' },
-  'laser': { title: 'Laser Treatments', desc: 'Safe, advanced LASIK and laser vision correction for specs removal.', fullDesc: 'Achieve freedom from glasses and contact lenses with our cutting-edge refractive laser treatments. Whether you need standard LASIK, PRK, or Contoura Vision, our advanced laser suites ensure absolute diagnostic perfection and flawless corneal reshaping tailored to your unique visual signature.' },
-  'cornea': { title: 'Cornea Disorders', desc: 'Keratoconus management and corneal transplants.', fullDesc: 'We provide comprehensive care for corneal conditions including keratoconus, corneal dystrophies, and severe infections. From advanced C3R treatments to full-thickness and lamellar corneal transplants, our team is equipped with next-generation technology to restore corneal clarity.' },
-  'oculoplasty': { title: 'Oculoplasty', desc: 'Ptosis correction, blocked tear ducts, and aesthetic eyelid surgery.', fullDesc: 'Our oculoplastic services blend the precision of ophthalmic microsurgery with the aesthetic understanding of plastic surgery. We expertly handle cosmetic and reconstructive procedures around the eyes, including droopy eyelids (ptosis), orbital trauma, and tear duct abnormalities.' },
-  'pediatric': { title: 'Pediatric Ophthalmology', desc: 'Early detection is vital for lifelong clear vision.', fullDesc: 'Children require specialized eye care. Our pediatric ophthalmology department is designed to be child-friendly and comforting, providing expert treatment for amblyopia (lazy eye), strabismus (squint), pediatric cataracts, and refractive errors to ensure lifelong healthy vision.' }
+  'retinal-detachment': { 
+    title: 'Retinal Detachment', 
+    desc: 'Expert surgical care and repair for detached retinas.', 
+    fullDesc: 'A retinal detachment is a medical emergency that can cause permanent vision loss. We utilize advanced sub-micron scanning and immediate surgical intervention (scleral buckle or vitrectomy) to reposition and secure the retina, restoring vision with unprecedented precision.',
+    reels: [
+      { title: 'Retinal Detachment', url: 'https://www.instagram.com/reel/DYujcMLhgFm/?igsh=MTJzNnYxbTdqbW40bg==' }
+    ]
+  },
+  'diabetic-retinopathy': {
+    title: 'Diabetic Retinopathy', 
+    desc: 'Advanced screening and treatment for diabetic eye disease.', 
+    fullDesc: 'Diabetic retinopathy damages blood vessels in the retina. We offer comprehensive management including anti-VEGF injections, advanced laser photocoagulation, and vitrectomy. Early detection through our routine screenings can prevent severe vision loss in diabetic patients.',
+    reels: [
+      { title: 'Diabetic Retinopathy', url: 'https://www.instagram.com/reel/DWEyQ42gTIB/?igsh=MTZtbTI0NmdobWQ3bw==' }
+    ]
+  },
+  'retinal-laser': {
+    title: 'Retinal Laser', 
+    desc: 'Precision laser therapies for various retinal conditions.', 
+    fullDesc: 'We perform state-of-the-art retinal laser procedures (photocoagulation) to treat tears, holes, and vascular diseases of the retina. This minimally invasive outpatient procedure is highly effective in halting disease progression and sealing retinal defects.',
+    reels: [
+      { title: 'Retinal Laser', url: 'https://www.instagram.com/reel/DUNYt5lAfZ4/?igsh=dHI1dDVkcW9jOWc3' }
+    ]
+  },
+  'cataract': { 
+    title: 'Intraocular Lens - Cataract Surgery', 
+    desc: 'MICS technology • Monofocal, Toric & Multifocal lenses.', 
+    fullDesc: 'We offer advanced micro-incision cataract surgery (MICS) with premium intraocular lenses (IOLs). The procedure is painless, minimally invasive, and designed to restore crystal clear vision. Our patients typically experience incredibly rapid recovery times.',
+    reels: [
+      { title: 'Intraocular Lens - Cataract Surgery', url: 'https://www.instagram.com/reel/DN5uAA8gQT6/?igsh=MWZ6dzhobGEzcXpzcw==' }
+    ]
+  },
+  'tuberculosis': {
+    title: 'Ocular Tuberculosis',
+    desc: 'Diagnosis and management of eye inflammation linked to TB.',
+    fullDesc: 'Ocular Tuberculosis can present as severe uveitis (inflammation of the uvea). It requires expert diagnosis to identify the underlying systemic infection. We offer advanced, targeted therapeutic options to control the inflammation, treat the infection, and preserve sight.',
+    reels: [
+      { title: 'Tuberculosis', url: 'https://www.instagram.com/reel/DL6TdRIxuJi/?igsh=ZWcyaHFuamRpNGFj' }
+    ]
+  },
+  'glaucoma': { 
+    title: 'Retinal Problems and Glaucoma', 
+    desc: 'Early detection and management of glaucoma and retina issues.', 
+    fullDesc: 'Glaucoma is a silent condition that damages the optic nerve and often co-exists with retinal problems. Our specialized clinic utilizes advanced predictive algorithms and automated perimetry to catch anomalies early. We offer medical management, laser therapies, and MIGS.',
+    reels: [
+      { title: 'Retinal Problems and Glaucoma', url: 'https://www.instagram.com/reel/DGTzk8wT9hD/?igsh=MWhmb3J5c2FwM29y' }
+    ]
+  },
+  'rop': { 
+    title: 'Retinopathy of Prematurity (ROP)', 
+    desc: 'Specialized screening and care for premature infants.', 
+    fullDesc: 'ROP is a potentially blinding eye disorder that primarily affects premature infants. Our specialized pediatric team is highly trained in the critical screening and timely laser or surgical treatment required to ensure the lifelong healthy vision of these vulnerable children.',
+    reels: [
+      { title: 'Retinopathy of Prematurity (ROP)', url: 'https://www.instagram.com/reel/DFgwaEvSykz/?igsh=bjg3aHIwNWp1cGhq' }
+    ]
+  },
+  'computer-vision-syndrome': {
+    title: 'Computer Vision Syndrome',
+    desc: 'Relief from digital eye strain and comprehensive vision care.',
+    fullDesc: 'Prolonged screen time can cause digital eye strain, dry eyes, and blurred vision. We provide comprehensive evaluations, specialized lubricating treatments, and ergonomic counseling to relieve Computer Vision Syndrome and restore ocular comfort.',
+    reels: [
+      { title: 'Computer Vision Syndrome', url: 'https://www.instagram.com/reel/DEY3WkYy6h8/?igsh=MTQ3NGQwbXJkM2U2Nw==' },
+      { title: 'Computer Vision Care', url: 'https://www.instagram.com/reel/DCs98ryxsXU/?igsh=Mm5uanBxbXUwbnNs' }
+    ]
+  },
+  'cornea': { 
+    title: 'Cornea Disorders', 
+    desc: 'Keratoconus using CXL • Pterygium surgery with autograft.', 
+    fullDesc: 'We provide comprehensive care for corneal conditions including keratoconus, corneal dystrophies, and severe infections. From advanced C3R treatments to full-thickness and lamellar corneal transplants, our team is equipped with next-generation technology to restore corneal clarity.' 
+  },
+  'oculoplasty': { 
+    title: 'Occuloplasty', 
+    desc: 'Management of Ptosis, Entropion, and Ectropion.', 
+    fullDesc: 'Our oculoplastic services blend the precision of ophthalmic microsurgery with the aesthetic understanding of plastic surgery. We expertly handle cosmetic and reconstructive procedures around the eyes, including droopy eyelids (ptosis), orbital trauma, and tear duct abnormalities.' 
+  },
+  'trauma': {
+    title: 'Ocular Trauma',
+    desc: '24/7 emergency care and specialized surgical management.',
+    fullDesc: 'Eye injuries require immediate and expert attention. Our trauma center is equipped to handle complex ocular emergencies, from foreign bodies to severe penetrating injuries, utilizing advanced reconstructive techniques to restore vision and anatomy.'
+  },
+  'industrial-trauma': {
+    title: 'Industrial Trauma Management',
+    desc: 'Expert emergency response for workplace eye injuries.',
+    fullDesc: 'Workplace eye injuries, particularly chemical burns and high-velocity projectile trauma, are managed with urgent, specialized care. We also offer consultations for industrial eye safety to prevent workplace visual impairment.'
+  }
 };
 
 export default function TreatmentDetails() {
@@ -31,7 +109,7 @@ export default function TreatmentDetails() {
   }
 
   return (
-    <div className="min-h-screen pt-32 pb-24 bg-surface">
+    <div className="min-h-screen pt-56 pb-24 bg-surface">
       <div className="container mx-auto px-6 relative z-10">
         <Link to="/" className="inline-flex items-center text-sm font-sans tracking-[0.2em] uppercase text-slate-500 hover:text-accent-500 mb-12 transition-colors">
           <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
@@ -57,14 +135,35 @@ export default function TreatmentDetails() {
             </a>
           </div>
           
-          <div className="lg:col-span-5 relative">
-            <div className="aspect-[3/4] w-full rounded-[2rem] overflow-hidden bg-slate-50 border border-slate-100 relative">
-              {/* Subtle medical pattern */}
-              <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(#0ea5e9 2px, transparent 2px)', backgroundSize: '30px 30px' }}></div>
-              <div className="absolute inset-0 flex items-center justify-center p-12 text-center">
-                <span className="font-display text-3xl text-slate-300 font-light leading-tight">{treatment.title} <br/> Specialized Care Suite</span>
+          <div className="lg:col-span-5 relative space-y-8">
+            {'reels' in treatment ? (
+              (treatment.reels as {title: string, url: string}[]).map((reel, idx) => {
+                const embedUrl = reel.url.split('?')[0] + 'embed';
+                return (
+                  <div key={idx} className="w-full rounded-[2rem] overflow-hidden bg-white border border-slate-200 shadow-xl relative aspect-[9/16] max-h-[750px]">
+                    <iframe 
+                      src={embedUrl}
+                      className="absolute inset-0 w-full h-full border-none"
+                      scrolling="no"
+                      allowTransparency={true}
+                      allow="encrypted-media"
+                    ></iframe>
+                  </div>
+                );
+              })
+            ) : (
+              <div className="aspect-[3/4] w-full rounded-[2rem] overflow-hidden bg-slate-50 border border-slate-100 relative shadow-xl">
+                <img 
+                  src={`/assets/${(id as string).replace('-', '_')}.jpg`} 
+                  alt={treatment.title} 
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent"></div>
+                <div className="absolute inset-0 flex items-end p-12">
+                  <span className="font-display text-3xl text-white font-light leading-tight">{treatment.title} <br/> <span className="text-accent-400">Specialized Care Suite</span></span>
+                </div>
               </div>
-            </div>
+            )}
             {/* Accents */}
             <div className="absolute -bottom-10 -left-10 w-64 h-64 bg-accent-500/10 rounded-full blur-3xl -z-10"></div>
             <div className="absolute -top-10 -right-10 w-64 h-64 bg-primary-300/10 rounded-full blur-3xl -z-10"></div>

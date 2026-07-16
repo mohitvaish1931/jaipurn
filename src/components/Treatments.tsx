@@ -4,14 +4,16 @@ const treatments = [
   { id: 'retinal-detachment', title: 'Retinal Detachment', desc: 'Expert surgical care and repair for detached retinas.' },
   { id: 'diabetic-retinopathy', title: 'Diabetic Retinopathy', desc: 'Advanced screening and treatment for diabetic eye disease.' },
   { id: 'retinal-laser', title: 'Retinal Laser', desc: 'Precision laser therapies for various retinal conditions.' },
-  { id: 'cataract', title: 'Intraocular Lens - Cataract Surgery', desc: 'MICS technology • Monofocal, Toric & Multifocal lenses.' },
-  { id: 'tuberculosis', title: 'Ocular Tuberculosis', desc: 'Diagnosis and management of eye inflammation linked to TB.' },
-  { id: 'glaucoma', title: 'Retinal Problems and Glaucoma', desc: 'Early detection and management of glaucoma and retina issues.' },
-  { id: 'rop', title: 'Retinopathy of Prematurity (ROP)', desc: 'Specialized screening and care for premature infants.' },
+  { id: 'intravitreal-injections', title: 'Intravitreal Injections', desc: 'Targeted medication delivery for macular and retinal diseases.' },
+  { id: 'cataract', title: 'Intra Ocular Lens - Cataract Surgery', desc: 'MICS technology • Monofocal, Toric & Multifocal lenses.' },
+  { id: 'complex-cataracts', title: 'Complex Cataracts with Glaucoma and Retina Problems', desc: 'Combined surgical management of challenging cataracts.' },
+  { id: 'uveitis', title: 'Uveitis', desc: 'Diagnosis and management of intraocular inflammation.' },
+  { id: 'glaucoma', title: 'Glaucoma', desc: 'Early detection and advanced medical or surgical management.' },
+  { id: 'rop', title: 'Retinopathy of Prematurity', desc: 'Specialized screening and care for premature infants.' },
   { id: 'computer-vision-syndrome', title: 'Computer Vision Syndrome', desc: 'Relief from digital eye strain and comprehensive vision care.' },
-  { id: 'cornea', title: 'Cornea Disorders', desc: 'Keratoconus using CXL • Pterygium surgery with autograft.' },
-  { id: 'oculoplasty', title: 'Occuloplasty', desc: 'Management of Ptosis, Entropion, and Ectropion.' },
-  { id: 'trauma', title: 'Ocular Trauma', desc: '24/7 emergency care and specialized surgical management.' },
+  { id: 'corneal-disorder', title: 'Corneal Disorder', desc: 'Advanced treatments for keratoconus, infections, and dystrophies.' },
+  { id: 'occulopasty', title: 'Occulopasty', desc: 'Cosmetic and reconstructive procedures around the eyes.' },
+  { id: 'ocular-trauma', title: 'Ocular Trauma', desc: '24/7 emergency care and specialized surgical management.' },
   { id: 'industrial-trauma', title: 'Industrial Trauma Management', desc: 'Expert emergency response for workplace eye injuries.' }
 ];
 

@@ -1,10 +1,11 @@
 
 
 const testimonials = [
-  { id: 1, name: 'Rajesh Sharma', text: 'The LASIK procedure was a breeze. I had 20/20 vision the next morning! Truly life-changing.', role: 'Software Engineer' },
-  { id: 2, name: 'Meera Patel', text: 'My cataract surgery was painless and the staff was incredibly supportive. Best eye care in the city.', role: 'Retired Teacher' },
-  { id: 3, name: 'Arun Verma', text: 'They caught my glaucoma early. The advanced tech here saved my vision. Eternally grateful.', role: 'Business Owner' },
-  { id: 4, name: 'Priya Singh', text: 'Crystal clear vision without glasses after 15 years. The doctors are magical.', role: 'Architect' },
+  { id: 1, name: 'Zayn Malik', text: 'We got my father treated at Netraliya Eye Hospital, and the experience was excellent. After the treatment, he is now able to see clearly, and we are truly thankful to the doctor. The doctor is brilliant, very experienced, and has a kind and polite nature, which gave us a lot of confidence.', role: 'Google Review' },
+  { id: 2, name: 'shilpa jain', text: 'Jaipur Netralya is an amazing place for all your eye related worries. Dr. Siddharth and his team is very cooperating, they guide you at each step along the process and help put your mind at ease by solving all your queries. He himself is very calm and explains everything very patiently.', role: 'Google Review' },
+  { id: 3, name: 'Pushpendra Khandelwal', text: 'It\'s a good hospital with having a experienced Doctor Mr Sidharth Bhardwaj. He had worked at Ahemdad hospital also He is expert in cataract surgery, I have gone through the surgery, my experience is very good. Staff is very helpful and hospital is maintening a good higenic environment.', role: 'Google Review' },
+  { id: 4, name: 'Vinay Tiwari', text: 'I still remember Dr. Bhardwaj removing the bandage from my mother\'s eye after the operation and seeing her smile—all her suffering was gone, and she had great vision. My mother is super satisfied with the results, and the doctor and staff are all super friendly and supportive.', role: 'Google Review' },
+  { id: 5, name: 'ayush kabra', text: 'I had an exceptional experience at Jaipur Netrayalya, and I cannot recommend it highly enough. Dr. Siddhart is an outstanding ophthalmologist. His expertise and attention to detail were immediately evident. He took the time to thoroughly explain my condition and the recommended treatments.', role: 'Google Review' }
 ];
 
 export default function Testimonials() {

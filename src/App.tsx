@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import TreatmentDetails from './pages/TreatmentDetails';
 
 import Insurance from './pages/Insurance';
+import CancellationPolicy from './pages/CancellationPolicy';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/treatments/:id" element={<TreatmentDetails />} />
           <Route path="/insurance" element={<Insurance />} />
+          <Route path="/cancellation-policy" element={<CancellationPolicy />} />
         </Routes>
         <Footer />
       </main>

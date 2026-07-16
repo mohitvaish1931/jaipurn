@@ -21,7 +21,7 @@ export default function Footer() {
               <li><a href="#about" className="hover:text-accent-500 transition-colors">About Us</a></li>
               <li><a href="#doctors" className="hover:text-accent-500 transition-colors">Our Doctors</a></li>
               <li><a href="#" className="hover:text-accent-500 transition-colors">Privacy Policy</a></li>
-              <li><a href="#" className="hover:text-accent-500 transition-colors">Cancellation & Refund Policy</a></li>
+              <li><a href="/cancellation-policy" className="hover:text-accent-500 transition-colors">Cancellation & Refund Policy</a></li>
             </ul>
           </div>
 

@@ -24,7 +24,7 @@ export default function Technology() {
           <div className="order-2 lg:order-1 relative rounded-[2rem] overflow-hidden aspect-[3/4] md:aspect-[4/5] border border-slate-200 shadow-xl">
             <motion.div style={{ y: imageY }} className="absolute inset-[-30%] w-[160%] h-[160%] will-change-transform flex items-center justify-center">
               <video 
-                src="/WhatsApp Video 2026-07-05 at 15.39.21.mp4" 
+                src="/WhatsApp Video 2026-07-07 at 00.03.42.mp4" 
                 autoPlay 
                 loop 
                 muted 

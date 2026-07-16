@@ -26,32 +26,39 @@ const treatmentsData = {
       { title: 'Retinal Laser', url: 'https://www.instagram.com/reel/DUNYt5lAfZ4/?igsh=dHI1dDVkcW9jOWc3' }
     ]
   },
+  'intravitreal-injections': {
+    title: 'Intravitreal Injections',
+    desc: 'Targeted medication delivery for macular and retinal diseases.',
+    fullDesc: 'Intravitreal injections are used to deliver medication directly into the eye, providing highly effective treatment for conditions such as macular degeneration, diabetic macular edema, and retinal vein occlusion. We ensure the procedure is safe, painless, and performed in a sterile environment.'
+  },
   'cataract': { 
-    title: 'Intraocular Lens - Cataract Surgery', 
+    title: 'Intra Ocular Lens - Cataract Surgery', 
     desc: 'MICS technology • Monofocal, Toric & Multifocal lenses.', 
     fullDesc: 'We offer advanced micro-incision cataract surgery (MICS) with premium intraocular lenses (IOLs). The procedure is painless, minimally invasive, and designed to restore crystal clear vision. Our patients typically experience incredibly rapid recovery times.',
     reels: [
       { title: 'Intraocular Lens - Cataract Surgery', url: 'https://www.instagram.com/reel/DN5uAA8gQT6/?igsh=MWZ6dzhobGEzcXpzcw==' }
     ]
   },
-  'tuberculosis': {
-    title: 'Ocular Tuberculosis',
-    desc: 'Diagnosis and management of eye inflammation linked to TB.',
-    fullDesc: 'Ocular Tuberculosis can present as severe uveitis (inflammation of the uvea). It requires expert diagnosis to identify the underlying systemic infection. We offer advanced, targeted therapeutic options to control the inflammation, treat the infection, and preserve sight.',
-    reels: [
-      { title: 'Tuberculosis', url: 'https://www.instagram.com/reel/DL6TdRIxuJi/?igsh=ZWcyaHFuamRpNGFj' }
-    ]
+  'complex-cataracts': {
+    title: 'Complex Cataracts with Glaucoma and Retina Problems',
+    desc: 'Combined surgical management of challenging cataracts.',
+    fullDesc: 'Cataracts complicated by co-existing conditions like glaucoma or retinal disorders require a highly skilled and comprehensive surgical approach. Our experienced team seamlessly manages these multi-faceted cases to ensure optimal visual outcomes while addressing all underlying conditions.'
+  },
+  'uveitis': {
+    title: 'Uveitis',
+    desc: 'Diagnosis and management of intraocular inflammation.',
+    fullDesc: 'Uveitis is inflammation of the middle layer of the eye (uvea) and can cause severe vision loss if left untreated. We specialize in diagnosing the root cause, whether infectious or autoimmune, and offer targeted therapeutic options to control the inflammation and preserve sight.'
   },
   'glaucoma': { 
-    title: 'Retinal Problems and Glaucoma', 
-    desc: 'Early detection and management of glaucoma and retina issues.', 
-    fullDesc: 'Glaucoma is a silent condition that damages the optic nerve and often co-exists with retinal problems. Our specialized clinic utilizes advanced predictive algorithms and automated perimetry to catch anomalies early. We offer medical management, laser therapies, and MIGS.',
+    title: 'Glaucoma', 
+    desc: 'Early detection and advanced medical or surgical management.', 
+    fullDesc: 'Glaucoma is a silent condition that damages the optic nerve. Our specialized clinic utilizes advanced predictive algorithms and automated perimetry to catch anomalies early. We offer complete medical management, laser therapies, and advanced surgical interventions.',
     reels: [
-      { title: 'Retinal Problems and Glaucoma', url: 'https://www.instagram.com/reel/DGTzk8wT9hD/?igsh=MWhmb3J5c2FwM29y' }
+      { title: 'Glaucoma', url: 'https://www.instagram.com/reel/DGTzk8wT9hD/?igsh=MWhmb3J5c2FwM29y' }
     ]
   },
   'rop': { 
-    title: 'Retinopathy of Prematurity (ROP)', 
+    title: 'Retinopathy of Prematurity', 
     desc: 'Specialized screening and care for premature infants.', 
     fullDesc: 'ROP is a potentially blinding eye disorder that primarily affects premature infants. Our specialized pediatric team is highly trained in the critical screening and timely laser or surgical treatment required to ensure the lifelong healthy vision of these vulnerable children.',
     reels: [
@@ -67,17 +74,17 @@ const treatmentsData = {
       { title: 'Computer Vision Care', url: 'https://www.instagram.com/reel/DCs98ryxsXU/?igsh=Mm5uanBxbXUwbnNs' }
     ]
   },
-  'cornea': { 
-    title: 'Cornea Disorders', 
-    desc: 'Keratoconus using CXL • Pterygium surgery with autograft.', 
-    fullDesc: 'We provide comprehensive care for corneal conditions including keratoconus, corneal dystrophies, and severe infections. From advanced C3R treatments to full-thickness and lamellar corneal transplants, our team is equipped with next-generation technology to restore corneal clarity.' 
+  'corneal-disorder': { 
+    title: 'Corneal Disorder', 
+    desc: 'Advanced treatments for keratoconus, infections, and dystrophies.', 
+    fullDesc: 'We provide comprehensive care for corneal conditions including keratoconus, corneal dystrophies, and severe infections. From advanced cross-linking treatments to corneal transplants, our team is equipped with next-generation technology to restore corneal clarity.' 
   },
-  'oculoplasty': { 
-    title: 'Occuloplasty', 
-    desc: 'Management of Ptosis, Entropion, and Ectropion.', 
+  'occulopasty': { 
+    title: 'Occulopasty', 
+    desc: 'Cosmetic and reconstructive procedures around the eyes.', 
     fullDesc: 'Our oculoplastic services blend the precision of ophthalmic microsurgery with the aesthetic understanding of plastic surgery. We expertly handle cosmetic and reconstructive procedures around the eyes, including droopy eyelids (ptosis), orbital trauma, and tear duct abnormalities.' 
   },
-  'trauma': {
+  'ocular-trauma': {
     title: 'Ocular Trauma',
     desc: '24/7 emergency care and specialized surgical management.',
     fullDesc: 'Eye injuries require immediate and expert attention. Our trauma center is equipped to handle complex ocular emergencies, from foreign bodies to severe penetrating injuries, utilizing advanced reconstructive techniques to restore vision and anatomy.'

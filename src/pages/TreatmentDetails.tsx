@@ -71,11 +71,7 @@ const treatmentsData = {
   'computer-vision-syndrome': {
     title: 'Computer Vision Syndrome',
     desc: 'Relief from digital eye strain and comprehensive vision care.',
-    fullDesc: 'Prolonged screen time can cause digital eye strain, dry eyes, and blurred vision. We provide comprehensive evaluations, specialized lubricating treatments, and ergonomic counseling to relieve Computer Vision Syndrome and restore ocular comfort.',
-    reels: [
-      { title: 'Computer Vision Syndrome', url: 'https://www.instagram.com/reel/DEY3WkYy6h8/?igsh=MTQ3NGQwbXJkM2U2Nw==' },
-      { title: 'Computer Vision Care', url: 'https://www.instagram.com/reel/DCs98ryxsXU/?igsh=Mm5uanBxbXUwbnNs' }
-    ]
+    fullDesc: 'Prolonged screen time can cause digital eye strain, dry eyes, and blurred vision. We provide comprehensive evaluations, specialized lubricating treatments, and ergonomic counseling to relieve Computer Vision Syndrome and restore ocular comfort.'
   },
   'corneal-disorder': { 
     title: 'Corneal Disorder', 

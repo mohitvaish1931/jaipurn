@@ -42,7 +42,10 @@ const treatmentsData = {
   'complex-cataracts': {
     title: 'Complex Cataracts with Glaucoma and Retina Problems',
     desc: 'Combined surgical management of challenging cataracts.',
-    fullDesc: 'Cataracts complicated by co-existing conditions like glaucoma or retinal disorders require a highly skilled and comprehensive surgical approach. Our experienced team seamlessly manages these multi-faceted cases to ensure optimal visual outcomes while addressing all underlying conditions.'
+    fullDesc: 'Cataracts complicated by co-existing conditions like glaucoma or retinal disorders require a highly skilled and comprehensive surgical approach. Our experienced team seamlessly manages these multi-faceted cases to ensure optimal visual outcomes while addressing all underlying conditions.',
+    reels: [
+      { title: 'Complex Cataracts', url: 'https://www.instagram.com/reel/DGTzk8wT9hD/?igsh=MWhmb3J5c2FwM29y' }
+    ]
   },
   'uveitis': {
     title: 'Uveitis',
@@ -52,10 +55,7 @@ const treatmentsData = {
   'glaucoma': { 
     title: 'Glaucoma', 
     desc: 'Early detection and advanced medical or surgical management.', 
-    fullDesc: 'Glaucoma is a silent condition that damages the optic nerve. Our specialized clinic utilizes advanced predictive algorithms and automated perimetry to catch anomalies early. We offer complete medical management, laser therapies, and advanced surgical interventions.',
-    reels: [
-      { title: 'Glaucoma', url: 'https://www.instagram.com/reel/DGTzk8wT9hD/?igsh=MWhmb3J5c2FwM29y' }
-    ]
+    fullDesc: 'Glaucoma is a silent condition that damages the optic nerve. Our specialized clinic utilizes advanced predictive algorithms and automated perimetry to catch anomalies early. We offer complete medical management, laser therapies, and advanced surgical interventions.'
   },
   'rop': { 
     title: 'Retinopathy of Prematurity', 

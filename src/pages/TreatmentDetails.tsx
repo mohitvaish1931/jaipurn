@@ -55,7 +55,10 @@ const treatmentsData = {
   'glaucoma': { 
     title: 'Glaucoma', 
     desc: 'Early detection and advanced medical or surgical management.', 
-    fullDesc: 'Glaucoma is a silent condition that damages the optic nerve. Our specialized clinic utilizes advanced predictive algorithms and automated perimetry to catch anomalies early. We offer complete medical management, laser therapies, and advanced surgical interventions.'
+    fullDesc: 'Glaucoma is a silent condition that damages the optic nerve. Our specialized clinic utilizes advanced predictive algorithms and automated perimetry to catch anomalies early. We offer complete medical management, laser therapies, and advanced surgical interventions.',
+    reels: [
+      { title: 'Glaucoma Patient Experience', url: 'https://www.instagram.com/reel/DHp3xokBQGz/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==' }
+    ]
   },
   'rop': { 
     title: 'Retinopathy of Prematurity', 

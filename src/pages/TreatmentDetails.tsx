@@ -81,7 +81,10 @@ const treatmentsData = {
   'occulopasty': { 
     title: 'Occulopasty', 
     desc: 'Cosmetic and reconstructive procedures around the eyes.', 
-    fullDesc: 'Our oculoplastic services blend the precision of ophthalmic microsurgery with the aesthetic understanding of plastic surgery. We expertly handle cosmetic and reconstructive procedures around the eyes, including droopy eyelids (ptosis), orbital trauma, and tear duct abnormalities.' 
+    fullDesc: 'Our oculoplastic services blend the precision of ophthalmic microsurgery with the aesthetic understanding of plastic surgery. We expertly handle cosmetic and reconstructive procedures around the eyes, including droopy eyelids (ptosis), orbital trauma, and tear duct abnormalities.',
+    images: [
+      { alt: 'Exotropia Before and After Surgery', url: '/squint_before_after.jpg' }
+    ]
   },
   'ocular-trauma': {
     title: 'Ocular Trauma',
@@ -145,22 +148,32 @@ export default function TreatmentDetails() {
           </div>
           
           <div className="lg:col-span-5 relative space-y-8">
-            {'reels' in treatment ? (
-              (treatment.reels as {title: string, url: string}[]).map((reel, idx) => {
-                const embedUrl = reel.url.split('?')[0] + 'embed';
-                return (
-                  <div key={idx} className="w-full rounded-[2rem] overflow-hidden bg-white border border-slate-200 shadow-xl relative aspect-[9/16] max-h-[750px]">
-                    <iframe 
-                      src={embedUrl}
-                      className="absolute inset-0 w-full h-full border-none"
-                      scrolling="no"
-                      allowTransparency={true}
-                      allow="encrypted-media"
-                    ></iframe>
-                  </div>
-                );
-              })
-            ) : (
+            {'reels' in treatment && (treatment.reels as {title: string, url: string}[]).map((reel, idx) => {
+              const embedUrl = reel.url.split('?')[0] + 'embed';
+              return (
+                <div key={`reel-${idx}`} className="w-full rounded-[2rem] overflow-hidden bg-white border border-slate-200 shadow-xl relative aspect-[9/16] max-h-[750px]">
+                  <iframe 
+                    src={embedUrl}
+                    className="absolute inset-0 w-full h-full border-none"
+                    scrolling="no"
+                    allowTransparency={true}
+                    allow="encrypted-media"
+                  ></iframe>
+                </div>
+              );
+            })}
+
+            {'images' in treatment && (treatment.images as {alt: string, url: string}[]).map((img, idx) => (
+              <div key={`img-${idx}`} className="w-full rounded-[2rem] overflow-hidden bg-white border border-slate-200 shadow-xl relative aspect-[4/3]">
+                <img 
+                  src={img.url} 
+                  alt={img.alt} 
+                  className="absolute inset-0 w-full h-full object-cover object-center"
+                />
+              </div>
+            ))}
+
+            {!('reels' in treatment) && !('images' in treatment) && (
               <div className="aspect-[3/4] w-full rounded-[2rem] overflow-hidden bg-slate-50 border border-slate-100 relative shadow-xl">
                 <img 
                   src={`/assets/${(id as string).replace('-', '_')}.jpg`} 

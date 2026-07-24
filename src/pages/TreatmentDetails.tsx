@@ -90,7 +90,10 @@ const treatmentsData = {
   'ocular-trauma': {
     title: 'Ocular Trauma',
     desc: '24/7 emergency care and specialized surgical management.',
-    fullDesc: 'Eye injuries require immediate and expert attention. Our trauma center is equipped to handle complex ocular emergencies, from foreign bodies to severe penetrating injuries, utilizing advanced reconstructive techniques to restore vision and anatomy.'
+    fullDesc: 'Eye injuries require immediate and expert attention. Our trauma center is equipped to handle complex ocular emergencies, from foreign bodies to severe penetrating injuries, utilizing advanced reconstructive techniques to restore vision and anatomy.',
+    reels: [
+      { title: 'Ocular Trauma Case', url: 'https://www.instagram.com/p/Co0TKt8BdcC/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==' }
+    ]
   },
   'industrial-trauma': {
     title: 'Industrial Trauma Management',

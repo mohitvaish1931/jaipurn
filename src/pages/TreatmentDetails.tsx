@@ -76,7 +76,10 @@ const treatmentsData = {
   'corneal-disorder': { 
     title: 'Corneal Disorder', 
     desc: 'Advanced treatments for keratoconus, infections, and dystrophies.', 
-    fullDesc: 'We provide comprehensive care for corneal conditions including keratoconus, corneal dystrophies, and severe infections. From advanced cross-linking treatments to corneal transplants, our team is equipped with next-generation technology to restore corneal clarity.' 
+    fullDesc: 'We provide comprehensive care for corneal conditions including keratoconus, corneal dystrophies, and severe infections. From advanced cross-linking treatments to corneal transplants, our team is equipped with next-generation technology to restore corneal clarity.',
+    videos: [
+      { title: 'Corneal collagen cross linking for Keratoconus', url: '/WhatsApp Video 2026-07-27 at 16.27.06.mp4' }
+    ]
   },
   'occulopasty': { 
     title: 'Occulopasty', 
@@ -177,7 +180,17 @@ export default function TreatmentDetails() {
               </div>
             ))}
 
-            {!('reels' in treatment) && !('images' in treatment) && (
+            {'videos' in treatment && (treatment.videos as {title: string, url: string}[]).map((video, idx) => (
+              <div key={`video-${idx}`} className="w-full rounded-[2rem] overflow-hidden bg-black border border-slate-200 shadow-xl relative aspect-[9/16] max-h-[750px] flex items-center justify-center">
+                <video 
+                  src={video.url} 
+                  controls 
+                  className="w-full h-full object-contain"
+                />
+              </div>
+            ))}
+
+            {!('reels' in treatment) && !('images' in treatment) && !('videos' in treatment) && (
               <div className="aspect-[3/4] w-full rounded-[2rem] overflow-hidden bg-slate-50 border border-slate-100 relative shadow-xl">
                 <img 
                   src={`/assets/${(id as string).replace('-', '_')}.jpg`} 

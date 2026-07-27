@@ -97,9 +97,6 @@ const treatmentsData = {
     reels: [
       { title: 'Squint (Strabismus) Surgery', url: 'https://www.instagram.com/p/Co0TKt8BdcC/?igsh=cmxib3Myd2EzenB0' },
       { title: 'Age Limit for Squint Surgery', url: 'https://www.instagram.com/p/C6Eu_qcBmrn/?igsh=Z3llNTZwY3F2YXc4' }
-    ],
-    images: [
-      { alt: 'Exotropia Before and After Surgery', url: '/squint_before_after.jpg' }
     ]
   },
   'ocular-trauma': {

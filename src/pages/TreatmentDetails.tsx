@@ -82,6 +82,10 @@ const treatmentsData = {
     title: 'Occulopasty', 
     desc: 'Cosmetic and reconstructive procedures around the eyes.', 
     fullDesc: 'Our oculoplastic services blend the precision of ophthalmic microsurgery with the aesthetic understanding of plastic surgery. We expertly handle cosmetic and reconstructive procedures around the eyes, including droopy eyelids (ptosis), orbital trauma, and tear duct abnormalities.',
+    reels: [
+      { title: 'Squint (Strabismus) Surgery', url: 'https://www.instagram.com/p/Co0TKt8BdcC/?igsh=cmxib3Myd2EzenB0' },
+      { title: 'Age Limit for Squint Surgery', url: 'https://www.instagram.com/p/C6Eu_qcBmrn/?igsh=Z3llNTZwY3F2YXc4' }
+    ],
     images: [
       { alt: 'Exotropia Before and After Surgery', url: '/squint_before_after.jpg' }
     ]
@@ -89,10 +93,7 @@ const treatmentsData = {
   'ocular-trauma': {
     title: 'Ocular Trauma',
     desc: '24/7 emergency care and specialized surgical management.',
-    fullDesc: 'Eye injuries require immediate and expert attention. Our trauma center is equipped to handle complex ocular emergencies, from foreign bodies to severe penetrating injuries, utilizing advanced reconstructive techniques to restore vision and anatomy.',
-    reels: [
-      { title: 'Ocular Trauma Case', url: 'https://www.instagram.com/p/Co0TKt8BdcC/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==' }
-    ]
+    fullDesc: 'Eye injuries require immediate and expert attention. Our trauma center is equipped to handle complex ocular emergencies, from foreign bodies to severe penetrating injuries, utilizing advanced reconstructive techniques to restore vision and anatomy.'
   },
   'industrial-trauma': {
     title: 'Industrial Trauma Management',

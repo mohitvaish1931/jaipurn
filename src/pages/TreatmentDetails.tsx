@@ -29,7 +29,10 @@ const treatmentsData = {
   'intravitreal-injections': {
     title: 'Intravitreal Injections',
     desc: 'Targeted medication delivery for macular and retinal diseases.',
-    fullDesc: 'Intravitreal injections are used to deliver medication directly into the eye, providing highly effective treatment for conditions such as macular degeneration, diabetic macular edema, and retinal vein occlusion. We ensure the procedure is safe, painless, and performed in a sterile environment.'
+    fullDesc: 'Intravitreal injections are used to deliver medication directly into the eye, providing highly effective treatment for conditions such as macular degeneration, diabetic macular edema, and retinal vein occlusion. We ensure the procedure is safe, painless, and performed in a sterile environment.',
+    reels: [
+      { title: 'Intravitreal Injection', url: 'https://www.instagram.com/reel/C8xbHLeyl_J/?igsh=MW1pZmpiMXR6bm1saA==' }
+    ]
   },
   'cataract': { 
     title: 'Intra Ocular Lens - Cataract Surgery', 
@@ -50,7 +53,10 @@ const treatmentsData = {
   'uveitis': {
     title: 'Uveitis',
     desc: 'Diagnosis and management of intraocular inflammation.',
-    fullDesc: 'Uveitis is inflammation of the middle layer of the eye (uvea) and can cause severe vision loss if left untreated. We specialize in diagnosing the root cause, whether infectious or autoimmune, and offer targeted therapeutic options to control the inflammation and preserve sight.'
+    fullDesc: 'Uveitis is inflammation of the middle layer of the eye (uvea) and can cause severe vision loss if left untreated. We specialize in diagnosing the root cause, whether infectious or autoimmune, and offer targeted therapeutic options to control the inflammation and preserve sight.',
+    reels: [
+      { title: 'Uveitis Treatment', url: 'https://www.instagram.com/reel/DL6TdRIxuJi/?igsh=ZWcyaHFuamRpNGFj' }
+    ]
   },
   'glaucoma': { 
     title: 'Glaucoma', 
@@ -71,7 +77,10 @@ const treatmentsData = {
   'computer-vision-syndrome': {
     title: 'Computer Vision Syndrome',
     desc: 'Relief from digital eye strain and comprehensive vision care.',
-    fullDesc: 'Prolonged screen time can cause digital eye strain, dry eyes, and blurred vision. We provide comprehensive evaluations, specialized lubricating treatments, and ergonomic counseling to relieve Computer Vision Syndrome and restore ocular comfort.'
+    fullDesc: 'Prolonged screen time can cause digital eye strain, dry eyes, and blurred vision. We provide comprehensive evaluations, specialized lubricating treatments, and ergonomic counseling to relieve Computer Vision Syndrome and restore ocular comfort.',
+    reels: [
+      { title: 'Computer Vision Syndrome', url: 'https://www.instagram.com/reel/DEY3WkYy6h8/?igsh=MTQ3NGQwbXJkM2U2Nw==' }
+    ]
   },
   'corneal-disorder': { 
     title: 'Corneal Disorder', 

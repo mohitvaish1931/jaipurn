@@ -1,7 +1,18 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 
-const InputField = ({ id, type = 'text', placeholder, value, onChange, onFocus, onBlur, isFocused }: any) => (
+interface InputFieldProps {
+  id: string;
+  type?: string;
+  placeholder: string;
+  value: string;
+  onChange: (id: string, value: string) => void;
+  onFocus: (id: string) => void;
+  onBlur: (value: null) => void;
+  isFocused: boolean;
+}
+
+const InputField = ({ id, type = 'text', placeholder, value, onChange, onFocus, onBlur, isFocused }: InputFieldProps) => (
   <div className="relative mb-12">
     <input
       type={type}

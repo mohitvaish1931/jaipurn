@@ -1,7 +1,9 @@
+import { Link } from 'react-router-dom';
+
 const posts = [
-  { date: 'Oct 12, 2025', title: 'The Silent Thief of Sight: A Doctor’s Guide to Glaucoma', link: '#' },
-  { date: 'Sep 28, 2025', title: 'Precision Light: A Retina Specialist’s Guide to Laser Therapy', link: '#' },
-  { date: 'Aug 15, 2025', title: 'The Sight-Saving Needle: A Retina Specialist’s Guide to Intravitreal Injections', link: '#' }
+  { date: 'Oct 12, 2025', title: 'The Silent Thief of Sight: A Doctor’s Guide to Glaucoma', link: '/blogs/glaucoma-guide' },
+  { date: 'Sep 28, 2025', title: 'Precision Light: A Retina Specialist’s Guide to Laser Therapy', link: '/blogs/laser-therapy-retina' },
+  { date: 'Aug 15, 2025', title: 'The Sight-Saving Needle: A Retina Specialist’s Guide to Intravitreal Injections', link: '/blogs/intravitreal-injections' }
 ];
 
 export default function Blog() {
@@ -19,7 +21,7 @@ export default function Blog() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {posts.map((post, i) => (
-            <a key={i} href={post.link} className="group block border-t border-slate-200 pt-8 hover:border-accent-500 transition-colors duration-300">
+            <Link key={i} to={post.link} className="group block border-t border-slate-200 pt-8 hover:border-accent-500 transition-colors duration-300">
               <span className="font-sans text-xs uppercase tracking-widest text-accent-500 block mb-4">
                 {post.date}
               </span>
@@ -32,7 +34,7 @@ export default function Blog() {
                   <path d="M1 7H13M13 7L7 1M13 7L7 13" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </div>
-            </a>
+            </Link>
           ))}
         </div>
       </div>

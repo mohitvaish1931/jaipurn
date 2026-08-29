@@ -28,8 +28,14 @@ export default function About() {
             <h2 className="font-display text-5xl md:text-7xl font-medium text-slate-900 mb-8 leading-[1.1] tracking-tight">
               Decades of <br/> Uncompromising <br/> <span className="text-slate-500">Excellence.</span>
             </h2>
-            <p className="text-slate-600 font-sans text-lg md:text-xl font-light leading-relaxed max-w-md">
-              Established with a vision to deliver state-of-the-art treatment, we provide top-quality healthcare with experienced doctors, emergency services, and round-the-clock support. To be a trusted leader in quality, accessible, and compassionate healthcare.
+            <p className="text-slate-600 font-sans text-lg md:text-xl font-light leading-relaxed max-w-lg mb-6">
+              Established with a vision to deliver state-of-the-art treatment, Jaipur Netralaya provides top-quality healthcare with experienced doctors, emergency services, and round-the-clock support. We are dedicated to being a trusted leader in quality, accessible, and compassionate healthcare across Rajasthan.
+            </p>
+            <p className="text-slate-600 font-sans text-lg md:text-xl font-light leading-relaxed max-w-lg mb-6">
+              As the premier eye care and retina hospital, our facility is equipped with the latest diagnostic and surgical technologies. We specialize in comprehensive eye exams, advanced cataract surgery using premium intraocular lenses (IOLs), intricate retinal detachment repairs, diabetic retinopathy management, and glaucoma treatments.
+            </p>
+            <p className="text-slate-600 font-sans text-lg md:text-xl font-light leading-relaxed max-w-lg">
+              Our team of highly qualified ophthalmologists and surgeons bring decades of clinical expertise. By continually adopting groundbreaking medical advancements and maintaining stringent safety protocols, Jaipur Netralaya ensures that every patient receives personalized, world-class vision care. Your sight is our ultimate priority.
             </p>
           </div>
 

@@ -26,13 +26,18 @@ export default function Treatments() {
         <div className="flex flex-col md:flex-row justify-between items-end mb-20">
           <div>
             <span className="text-xs tracking-[0.3em] text-accent-500 uppercase font-sans mb-4 block">Our Expertise</span>
-            <h2 className="font-display text-5xl md:text-6xl font-medium text-slate-900 tracking-tight">
+            <h2 className="font-display text-5xl md:text-6xl font-medium text-slate-900 tracking-tight mb-6">
               Clinical <span className="text-slate-500">Focus.</span>
             </h2>
+            <div className="text-slate-600 font-sans max-w-2xl font-light leading-relaxed mb-8">
+              <p className="mb-4">
+                At Jaipur Netralaya, we offer specialized procedures powered by next-generation technology and unparalleled surgical skill. Our comprehensive clinical focus spans the entire spectrum of ophthalmology, ensuring that patients receive the most advanced and effective treatments available today.
+              </p>
+              <p>
+                From routine vision corrections and complex cataract surgeries using cutting-edge MICS technology, to intricate vitreoretinal interventions for diabetic retinopathy and macular degeneration, our state-of-the-art facility is equipped to handle all ocular emergencies and chronic eye diseases. We are committed to preserving and restoring your vision through meticulous, evidence-based medical care.
+              </p>
+            </div>
           </div>
-          <p className="text-slate-500 font-sans max-w-sm text-right hidden md:block font-light">
-            Specialized procedures powered by next-generation technology and unparalleled surgical skill.
-          </p>
         </div>
 
         <div className="border-t border-slate-200">

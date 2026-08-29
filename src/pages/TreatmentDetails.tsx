@@ -1,5 +1,6 @@
 import { useParams, Link } from 'react-router-dom';
 import { useEffect } from 'react';
+import SEO from '../components/SEO';
 
 const treatmentsData = {
   'retinal-detachment': { 
@@ -135,6 +136,10 @@ export default function TreatmentDetails() {
 
   return (
     <div className="min-h-screen pt-56 pb-24 bg-surface">
+      <SEO 
+        title={`${treatment.title} in Jaipur | Best Treatment at Jaipur Netralaya`}
+        description={treatment.desc}
+      />
       <div className="container mx-auto px-6 relative z-10">
         <Link to="/" className="inline-flex items-center text-sm font-sans tracking-[0.2em] uppercase text-slate-500 hover:text-accent-500 mb-12 transition-colors">
           <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>

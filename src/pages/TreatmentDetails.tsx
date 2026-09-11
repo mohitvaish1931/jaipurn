@@ -2,118 +2,7 @@ import { useParams, Link } from 'react-router-dom';
 import { useEffect } from 'react';
 import SEO from '../components/SEO';
 
-const treatmentsData = {
-  'retinal-detachment': { 
-    title: 'Retinal Detachment', 
-    desc: 'Expert surgical care and repair for detached retinas.', 
-    fullDesc: 'A retinal detachment is a medical emergency that can cause permanent vision loss. We utilize advanced sub-micron scanning and immediate surgical intervention (scleral buckle or vitrectomy) to reposition and secure the retina, restoring vision with unprecedented precision.',
-    reels: [
-      { title: 'Retinal Detachment', url: 'https://www.instagram.com/reel/DYujcMLhgFm/?igsh=MTJzNnYxbTdqbW40bg==' }
-    ]
-  },
-  'diabetic-retinopathy': {
-    title: 'Diabetic Retinopathy', 
-    desc: 'Advanced screening and treatment for diabetic eye disease.', 
-    fullDesc: 'Diabetic retinopathy damages blood vessels in the retina. We offer comprehensive management including anti-VEGF injections, advanced laser photocoagulation, and vitrectomy. Early detection through our routine screenings can prevent severe vision loss in diabetic patients.',
-    reels: [
-      { title: 'Diabetic Retinopathy', url: 'https://www.instagram.com/reel/DWEyQ42gTIB/?igsh=MTZtbTI0NmdobWQ3bw==' }
-    ]
-  },
-  'retinal-laser': {
-    title: 'Retinal Laser', 
-    desc: 'Precision laser therapies for various retinal conditions.', 
-    fullDesc: 'We perform state-of-the-art retinal laser procedures (photocoagulation) to treat tears, holes, and vascular diseases of the retina. This minimally invasive outpatient procedure is highly effective in halting disease progression and sealing retinal defects.',
-    reels: [
-      { title: 'Retinal Laser', url: 'https://www.instagram.com/reel/DUNYt5lAfZ4/?igsh=dHI1dDVkcW9jOWc3' }
-    ]
-  },
-  'intravitreal-injections': {
-    title: 'Intravitreal Injections',
-    desc: 'Targeted medication delivery for macular and retinal diseases.',
-    fullDesc: 'Intravitreal injections are used to deliver medication directly into the eye, providing highly effective treatment for conditions such as macular degeneration, diabetic macular edema, and retinal vein occlusion. We ensure the procedure is safe, painless, and performed in a sterile environment.',
-    reels: [
-      { title: 'Intravitreal Injection', url: 'https://www.instagram.com/reel/C8xbHLeyl_J/?igsh=MW1pZmpiMXR6bm1saA==' }
-    ]
-  },
-  'cataract': { 
-    title: 'Intra Ocular Lens - Cataract Surgery', 
-    desc: 'MICS technology • Monofocal, Toric & Multifocal lenses.', 
-    fullDesc: 'We offer advanced micro-incision cataract surgery (MICS) with premium intraocular lenses (IOLs). The procedure is painless, minimally invasive, and designed to restore crystal clear vision. Our patients typically experience incredibly rapid recovery times.',
-    reels: [
-      { title: 'Intraocular Lens - Cataract Surgery', url: 'https://www.instagram.com/reel/DN5uAA8gQT6/?igsh=MWZ6dzhobGEzcXpzcw==' }
-    ]
-  },
-  'complex-cataracts': {
-    title: 'Complex Cataracts with Glaucoma and Retina Problems',
-    desc: 'Combined surgical management of challenging cataracts.',
-    fullDesc: 'Cataracts complicated by co-existing conditions like glaucoma or retinal disorders require a highly skilled and comprehensive surgical approach. Our experienced team seamlessly manages these multi-faceted cases to ensure optimal visual outcomes while addressing all underlying conditions.',
-    reels: [
-      { title: 'Complex Cataracts', url: 'https://www.instagram.com/reel/DGTzk8wT9hD/?igsh=MWhmb3J5c2FwM29y' }
-    ]
-  },
-  'uveitis': {
-    title: 'Uveitis',
-    desc: 'Diagnosis and management of intraocular inflammation.',
-    fullDesc: 'Uveitis is inflammation of the middle layer of the eye (uvea) and can cause severe vision loss if left untreated. We specialize in diagnosing the root cause, whether infectious or autoimmune, and offer targeted therapeutic options to control the inflammation and preserve sight.',
-    reels: [
-      { title: 'Uveitis Treatment', url: 'https://www.instagram.com/reel/DL6TdRIxuJi/?igsh=ZWcyaHFuamRpNGFj' }
-    ]
-  },
-  'glaucoma': { 
-    title: 'Glaucoma', 
-    desc: 'Early detection and advanced medical or surgical management.', 
-    fullDesc: 'Glaucoma is a silent condition that damages the optic nerve. Our specialized clinic utilizes advanced predictive algorithms and automated perimetry to catch anomalies early. We offer complete medical management, laser therapies, and advanced surgical interventions.',
-    reels: [
-      { title: 'Glaucoma Patient Experience', url: 'https://www.instagram.com/reel/DHp3xokBQGz/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==' }
-    ]
-  },
-  'rop': { 
-    title: 'Retinopathy of Prematurity', 
-    desc: 'Specialized screening and care for premature infants.', 
-    fullDesc: 'ROP is a potentially blinding eye disorder that primarily affects premature infants. Our specialized pediatric team is highly trained in the critical screening and timely laser or surgical treatment required to ensure the lifelong healthy vision of these vulnerable children.',
-    reels: [
-      { title: 'Retinopathy of Prematurity (ROP)', url: 'https://www.instagram.com/reel/DFgwaEvSykz/?igsh=bjg3aHIwNWp1cGhq' }
-    ]
-  },
-  'computer-vision-syndrome': {
-    title: 'Computer Vision Syndrome',
-    desc: 'Relief from digital eye strain and comprehensive vision care.',
-    fullDesc: 'Prolonged screen time can cause digital eye strain, dry eyes, and blurred vision. We provide comprehensive evaluations, specialized lubricating treatments, and ergonomic counseling to relieve Computer Vision Syndrome and restore ocular comfort.',
-    reels: [
-      { title: 'Computer Vision Syndrome', url: 'https://www.instagram.com/reel/DEY3WkYy6h8/?igsh=MTQ3NGQwbXJkM2U2Nw==' }
-    ]
-  },
-  'corneal-disorder': { 
-    title: 'Corneal Disorder', 
-    desc: 'Advanced treatments for keratoconus, infections, and dystrophies.', 
-    fullDesc: 'We provide comprehensive care for corneal conditions including keratoconus, corneal dystrophies, and severe infections. From advanced cross-linking treatments to corneal transplants, our team is equipped with next-generation technology to restore corneal clarity.',
-    videos: [
-      { title: 'Corneal collagen cross linking for Keratoconus', url: '/WhatsApp Video 2026-07-27 at 16.27.06.mp4' }
-    ]
-  },
-  'occulopasty': { 
-    title: 'Occulopasty', 
-    desc: 'Cosmetic and reconstructive procedures around the eyes.', 
-    fullDesc: 'Our oculoplastic services blend the precision of ophthalmic microsurgery with the aesthetic understanding of plastic surgery. We expertly handle cosmetic and reconstructive procedures around the eyes, including droopy eyelids (ptosis), orbital trauma, and tear duct abnormalities.',
-    reels: [
-      { title: 'Squint (Strabismus) Surgery', url: 'https://www.instagram.com/p/Co0TKt8BdcC/?igsh=cmxib3Myd2EzenB0' },
-      { title: 'Age Limit for Squint Surgery', url: 'https://www.instagram.com/p/C6Eu_qcBmrn/?igsh=Z3llNTZwY3F2YXc4' }
-    ]
-  },
-  'ocular-trauma': {
-    title: 'Ocular Trauma',
-    desc: '24/7 emergency care and specialized surgical management.',
-    fullDesc: 'Eye injuries require immediate and expert attention. Our trauma center is equipped to handle complex ocular emergencies, from foreign bodies to severe penetrating injuries, utilizing advanced reconstructive techniques to restore vision and anatomy.',
-    reels: [
-      { title: 'Ocular Trauma Case', url: 'https://www.instagram.com/reel/DW_NyANAULd/?igsh=eXRsZWk3M2g2dmhr' }
-    ]
-  },
-  'industrial-trauma': {
-    title: 'Industrial Trauma Management',
-    desc: 'Expert emergency response for workplace eye injuries.',
-    fullDesc: 'Workplace eye injuries, particularly chemical burns and high-velocity projectile trauma, are managed with urgent, specialized care. We also offer consultations for industrial eye safety to prevent workplace visual impairment.'
-  }
-};
+import { treatmentsData } from '../data/treatmentsData';
 
 export default function TreatmentDetails() {
   const { id } = useParams();
@@ -155,8 +44,8 @@ export default function TreatmentDetails() {
             <p className="text-slate-600 font-sans text-xl md:text-2xl font-light leading-relaxed mb-12">
               {treatment.desc}
             </p>
-            <div className="prose prose-lg prose-slate font-light leading-relaxed max-w-none mb-12 text-slate-700">
-              <p>{treatment.fullDesc}</p>
+            <div className="prose prose-lg prose-slate font-light leading-relaxed max-w-none mb-12 text-slate-700 treatment-content">
+              {treatment.fullDesc}
             </div>
             
             <a href="/#booking" className="inline-block group relative px-10 py-5 bg-accent-500 text-white rounded-full font-display font-semibold text-lg overflow-hidden transition-all hover:scale-105 duration-500">

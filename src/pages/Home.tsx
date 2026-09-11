@@ -2,6 +2,7 @@ import SEO from '../components/SEO';
 import Hero from '../components/Hero';
 import Testimonials from '../components/Testimonials';
 import Blog from '../components/Blog';
+import Gallery from '../components/Gallery';
 import { Link } from 'react-router-dom';
 
 export default function Home() {
@@ -78,6 +79,7 @@ export default function Home() {
         </div>
       </section>
 
+      <Gallery />
       <Testimonials />
       <Blog />
     </>

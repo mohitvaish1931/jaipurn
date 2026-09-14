@@ -5,7 +5,43 @@ export const treatmentsData = {
     desc: 'Expert surgical care and repair for detached retinas.', 
     fullDesc: (
       <>
-        <p>A retinal detachment is a medical emergency that can cause permanent vision loss. We utilize advanced sub-micron scanning and immediate surgical intervention (scleral buckle or vitrectomy) to reposition and secure the retina, restoring vision with unprecedented precision.</p>
+        <h3>Retinal Detachment</h3>
+        <p>Retinal detachment is a critical medical emergency where the thin, light-sensitive layer of tissue at the back of the eye pulls away from its normal position. This separation cuts off the retinal cells from the blood vessels that supply essential oxygen and nourishment.</p>
+        <p>The longer retinal detachment goes untreated, the greater the risk of permanent vision loss in the affected eye. At Jaipur Netralaya, our specialized retina care team—headed by renowned Vitreoretinal Surgeon in Jaipur Dr Sidharth Bhardwaj—is fully equipped to provide immediate, sight-saving intervention.</p>
+        
+        <h4>Critical Warning Signs & Symptoms</h4>
+        <p>While retinal detachment itself is entirely painless, warning signs almost always appear before it fully advances. Seek care immediately if you experience:</p>
+        <ul>
+          <li><strong>Sudden Floaters:</strong> A dramatic increase in tiny specks, lines, or cobwebs drifting through your field of vision.</li>
+          <li><strong>Flashes of Light:</strong> Brief, sudden sparks or streaks of light (photopsia) in one or both eyes.</li>
+          <li><strong>Shadow or "Curtain" Effect:</strong> A dark, curtain-like shadow drawing across your central or peripheral field of vision.</li>
+          <li><strong>Blurred Vision:</strong> Sudden or progressive blurring of your sight.</li>
+          <li><strong>Loss of Side Vision:</strong> A gradual reduction in your peripheral (side) vision.</li>
+        </ul>
+        
+        <h4>When to Seek Emergency Eye Care</h4>
+        <p>Do not wait for symptoms to clear. Retinal detachment is a medical emergency that can lead to permanent blindness if left untreated.</p>
+        <p>If you or a loved one experiences any of these warning signs, contact Jaipur Netralaya immediately or visit our emergency eye care unit. Quick action by a leading eye specialist in Jaipur can save your sight.</p>
+        
+        <h4>How We Diagnose Retinal Detachment</h4>
+        <p>At Jaipur Netralaya Eye & Retina Center, our advanced diagnostic tools allow our specialists to quickly assess your condition and plan immediate treatment:</p>
+        <ul>
+          <li><strong>Advanced Retinal Examination:</strong> Using specialized lenses and high-intensity bright lights, our eye specialists get a highly detailed, 360-degree view of your retina to pinpoint any tears, holes, or detachment.</li>
+          <li><strong>Ocular Ultrasound Imaging:</strong> If there is bleeding inside the eye that blocks a clear view of the retina, we utilize advanced ultrasound technology to "see" through the blood and evaluate the retinal layer.</li>
+          <li><strong>Note:</strong> Our specialists will routinely examine both eyes—even if you only have symptoms in one—to ensure your complete ocular health.</li>
+        </ul>
+        
+        <h4>Advanced Retinal Treatment Options at Jaipur Netralaya</h4>
+        <p>As a dedicated retina hospital in Jaipur, we provide comprehensive medical and surgical interventions tailored to the severity of your retinal condition:</p>
+        
+        <h5>1. Retinal Laser Photocoagulation (Laser Surgery)</h5>
+        <p>For patients diagnosed with early-stage retinal tears or holes, laser surgery is a highly effective, non-invasive treatment. Our advanced retinal laser treatment uses a microscopic laser beam to create pinpoint burns around the tear. This forms scar tissue that securely welds the retina back to the underlying tissue, preventing a full detachment. Laser therapy is also widely used at our center to treat diabetic retinopathy and seal leaking blood vessels.</p>
+        
+        <h5>2. Advanced Vitrectomy Surgeries</h5>
+        <p>When a retinal detachment has already advanced or is accompanied by bleeding inside the eye, a vitrectomy is performed. Our expert vitreoretinal surgeons utilize state-of-the-art micro-incision vitrectomy systems (MIVS) to safely remove the vitreous gel pulling on the retina. The space is then filled with a gas bubble or silicone oil to press the retina back into its natural position while it heals.</p>
+        
+        <h4>Protect Your Vision Today</h4>
+        <p>If you are experiencing a change in your vision or a sudden increase in floaters, contact our team right away.</p>
       </>
     ),
     reels: [
@@ -17,7 +53,63 @@ export const treatmentsData = {
     desc: 'Advanced screening and treatment for diabetic eye disease.', 
     fullDesc: (
       <>
-        <p>Diabetic retinopathy damages blood vessels in the retina. We offer comprehensive management including anti-VEGF injections, advanced laser photocoagulation, and vitrectomy. Early detection through our routine screenings can prevent severe vision loss in diabetic patients.</p>
+        <h3>Understanding Diabetic Retinopathy: Causes, Risks, and Treatments</h3>
+        <p>Diabetic Retinopathy is a serious eye condition that damages the blood vessels of the retina, often leading to vision loss or blindness if left untreated. For patients at Jaipur Netralaya, understanding this condition is the first step toward preserving your sight.</p>
+        
+        <h4>What is Diabetic Retinopathy?</h4>
+        <p>To understand diabetic retinopathy, it helps to know how the eye works. The retina is a light-sensitive layer lining the back of your eye that acts like the film in a camera. At its center sits the macula, a small but vital zone responsible for sharp, central vision—the exact part of the eye you are using to read this text right now. The rest of the retina provides your peripheral (side) vision and helps you see in low light.</p>
+        <p>Healthy blood vessels constantly supply the retina with essential oxygen and nourishment. However, chronic high blood sugar from diabetes can damage these delicate vessels. When retinal blood vessels are compromised, it severely impacts retinal health, ultimately threatening your eyesight.</p>
+        
+        <h4>Why is Diabetic Retinopathy Important?</h4>
+        <p>Diabetic retinopathy is a leading cause of preventable blindness in the working-age population. Because the condition often progresses silently without early symptoms, regular eye screenings are critical.</p>
+        <p>Advanced stages require timely intervention. Laser treatment for diabetic retinopathy highly reduces the risk of permanent vision loss. However, for lasers or other advanced therapies to be most effective, treatment must be administered at the right stage—ideally before you notice any changes in your vision.</p>
+        
+        <h4>Who is at Risk for Diabetic Retinopathy?</h4>
+        <p>Anyone living with Type 1 or Type 2 diabetes is at risk of developing diabetic retinopathy. This risk applies regardless of whether your blood sugar is managed through diet, oral medications, or insulin injections.</p>
+        <p>Your risk increases significantly if:</p>
+        <ul>
+          <li><strong>Duration:</strong> You have lived with diabetes for a long time.</li>
+          <li><strong>Blood Sugar Control:</strong> Your blood glucose levels are consistently high or poorly managed.</li>
+          <li><strong>Hypertension:</strong> You have co-existing high blood pressure.</li>
+          <li><strong>Treatment Type:</strong> You require insulin therapy to manage your condition.</li>
+        </ul>
+        
+        <h4>What Are the Stages and Symptoms of Diabetic Retinopathy?</h4>
+        
+        <h5>1. Background Retinopathy (Early Stage)</h5>
+        <p>The earliest structural changes in the eye are known as background retinopathy. During this stage, tiny bulges called microaneurysms develop in the blood vessels, appearing as small red dots. You might also develop retinal haemorrhages, which are larger bleeding spots within the retina that resemble a bruise on the skin.</p>
+        <ul>
+          <li><strong>Does it affect vision?</strong> No, background retinopathy does not typically alter your sight or require immediate treatment.</li>
+          <li><strong>Next Steps:</strong> It serves as a warning sign. You must strictly control your diabetes and schedule a comprehensive diabetic eye exam every year.</li>
+        </ul>
+        
+        <h5>2. Progressive Retinal Damage (Advanced Stages)</h5>
+        <p>As the condition advances, retinal blood vessels become narrow or blocked, starving the retina of vital oxygen and nutrients. Depending on how far the disease has progressed, an ophthalmologist will look for specific warning signs:</p>
+        <ul>
+          <li><strong>Pre-proliferative Retinopathy:</strong> Blocked vessels cause areas of the retina to swell or secrete fluid (exudates), signaling that the eye is starved for oxygen.</li>
+          <li><strong>Proliferative Diabetic Retinopathy (PDR):</strong> The most advanced stage, where the retina attempts to grow new, fragile blood vessels. These abnormal vessels easily leak blood into the center of the eye, causing severe vision blurring or sudden vision loss.</li>
+        </ul>
+        
+        <hr />
+        
+        <h4>How Jaipur Netralaya Diagnoses and Treats Diabetic Retinopathy</h4>
+        <p>At Jaipur Netralaya Eye & Retina Centre, we specialize in halting diabetic vision loss before it becomes permanent. Led by Dr. Sidharth Bhardwaj, a leading vitreoretinal surgeon and retina specialist in Jaipur, our clinic combines state-of-the-art diagnostic imaging with advanced therapeutic interventions to preserve your sight.</p>
+        
+        <h5>Advanced Diagnostic Mapping</h5>
+        <p>Before mapping out a treatment plan, we perform deep-tissue retinal imaging to identify microscopic changes and structural issues:</p>
+        <ul>
+          <li><strong>Optical Coherence Tomography (OCT):</strong> A non-invasive, high-definition scan that provides cross-sectional, microscopic views of your retina. This allows us to detect even the slightest fluid accumulation or swelling in the macula (Diabetic Macular Edema) long before it causes noticeable vision blur.</li>
+          <li><strong>Fundus Fluorescein Angiography (FFA):</strong> For a highly accurate vascular evaluation, a safe fluorescent dye is introduced into the bloodstream. This enables us to physically map and photograph your retinal blood vessels in real-time, pinpointing exactly where leaks, blockages, or abnormal new vessels are forming.</li>
+          <li><strong>Comprehensive Digital Fundus Photography:</strong> Highly detailed imaging of the back of the eye used to track and monitor the step-by-step progression of the disease over your annual check-ups.</li>
+        </ul>
+        
+        <h5>Precision Treatment Modalities</h5>
+        <p>Treatment at Jaipur Netralaya is entirely customized to your specific stage of retinopathy:</p>
+        <ul>
+          <li><strong>Advanced Laser Photocoagulation:</strong> Utilizing cutting-edge laser technologies, our specialists can precisely seal leaking blood vessels and shrink abnormal, fragile new vessels. This target-specific laser therapy helps safely prevent advanced-stage complications like vitreous haemorrhages.</li>
+          <li><strong>Intravitreal Anti-VEGF Injections:</strong> If fluid leaks into your central vision, we administer advanced pharmacotherapy (such as Anti-VEGF injections). These targeted therapies block the proteins responsible for abnormal vessel growth, rapidly reducing swelling and frequently improving visual acuity. The quick procedure is performed under local anesthesia in an ultra-sterile, comfortable clinical environment.</li>
+          <li><strong>Micro-Incision Vitrectomy Surgery (MIVS):</strong> For complex or advanced cases—such as severe bleeding inside the eye or retinal detachment—Dr. Sidharth Bhardwaj performs advanced vitrectomy surgeries. This specialized microsurgery removes the blood-filled gel from the eye to safely restore the pathway of light to the retina.</li>
+        </ul>
       </>
     ),
     reels: [
@@ -29,7 +121,56 @@ export const treatmentsData = {
     desc: 'Targeted medication delivery for macular and retinal diseases.',
     fullDesc: (
       <>
-        <p>Intravitreal injections are used to deliver medication directly into the eye, providing highly effective treatment for conditions such as macular degeneration, diabetic macular edema, and retinal vein occlusion. We ensure the procedure is safe, painless, and performed in a sterile environment.</p>
+        <h3>Intravitreal Injections</h3>
+        <p>Intravitreal injections are a highly effective, advanced medical procedure used to treat specific retinal and eye diseases. The treatment involves precisely injecting specialized medication directly into the vitreous cavity—the clear, jelly-like fluid that fills the back of the eye. By delivering medicine straight to the problem area, this procedure helps protect, preserve, and often improve a patient's vision.</p>
+        <p>At Jaipur Netralaya, our experienced retinal specialists utilize state-of-the-art technology to administer intravitreal injections safely, comfortably, and with maximum precision.</p>
+        
+        <h4>Which Eye Diseases Can Be Treated with Intravitreal Injections?</h4>
+        <p>Intravitreal injection treatment is primarily used to manage conditions affecting the retina and macula. Key conditions include:</p>
+        <ul>
+          <li><strong>Age-Related Macular Degeneration (AMD):</strong> Specifically the "wet" form of AMD.</li>
+          <li><strong>Diabetic Retinopathy:</strong> Managing progressive blood vessel damage caused by diabetes.</li>
+          <li><strong>Macular Edema:</strong> Swelling or fluid buildup in the central part of the retina, often triggered by diabetes or retinal vein occlusions.</li>
+          <li><strong>Retinal Vein Occlusion (RVO):</strong> Blockages in the blood vessels of the retina.</li>
+        </ul>
+        
+        <h4>How do intravitreal injections work?</h4>
+        <p>The procedure works by delivering localized medication directly to the retina, bypassing the eye's natural barriers that prevent oral medications or standard eye drops from reaching the back of the eye.</p>
+        <p>During the quick, in-clinic procedure:</p>
+        <ol>
+          <li>The eye is completely numbed with specialized anesthetic drops to ensure a painless experience.</li>
+          <li>The eye and eyelids are thoroughly cleaned to prevent infection.</li>
+          <li>A retinal specialist uses an ultra-fine needle to gently inject the medication into the vitreous humor.</li>
+          <li>The medication immediately goes to work, reducing inflammation, stopping abnormal blood vessel growth, and clearing fluid accumulation.</li>
+        </ol>
+        
+        <h4>Comprehensive Intravitreal Injection Options Available at Jaipur Netralaya</h4>
+        <p>Different retinal conditions require specialized medications. To ensure customized care, Jaipur Netralaya provides complete availability of all globally approved and advanced types of intravitreal injections:</p>
+        
+        <h5>1. Anti-VEGF Injections (Targeting Abnormal Blood Vessels)</h5>
+        <p>Anti-VEGF medications work by blocking Vascular Endothelial Growth Factor, a protein responsible for abnormal blood vessel growth and fluid leakage in the retina:</p>
+        <ul>
+          <li><strong>Vabysmo (Faricimab):</strong> The latest, breakthrough dual-mechanism injection. It targets two pathways (VEGF and Ang-2), offering much longer-lasting results and reducing the total number of injections a patient needs over time.</li>
+          <li><strong>Eylea (Aflibercept):</strong> A highly effective, premium medication engineered to bind strongly to VEGF proteins, providing extended duration and exceptional protection against severe vision loss.</li>
+          <li><strong>Lucentis & Accentrix, Razumab, Ranieyes, Ranizurel (Ranibizumab):</strong> Widely recognized as a global gold standard for managing wet AMD and diabetic macular edema with an extensive clinical safety record.</li>
+          <li><strong>Avastin (Bevacizumab):</strong> A highly economical and cost-effective anti-VEGF alternative utilized to deliver excellent visual outcomes safely and affordably.</li>
+        </ul>
+        
+        <h5>2. Sustained-Release Steroid Implants (Targeting Inflammation)</h5>
+        <ul>
+          <li><strong>Ozurdex (Dexamethasone Implant):</strong> An advanced, long-acting steroid implant that slowly releases medication inside the eye over several months. It is exceptionally effective at clearing stubborn retinal swelling caused by diabetic macular edema or retinal vein occlusions.</li>
+        </ul>
+        
+        <h4>Why Choose Jaipur Netralaya for Retinal Care?</h4>
+        <p>If you are looking for advanced retinal therapy or intravitreal injections in Jaipur, Jaipur Netralaya offers world-class eye care. Our hospital provides customized treatment plans using globally approved Anti-VEGF medications and implants, all delivered under strict sterile conditions by the best retina specialist.</p>
+        <p>Furthermore, we provide cashless treatment facilities with major private insurance companies, TPAs, and public health schemes like RGHS.</p>
+        
+        <h4>Frequently Asked Questions (FAQs)</h4>
+        <p><strong>Can intravitreal injections treat macular edema in older patients?</strong><br/>
+        Yes. Intravitreal injections are widely recognized as a highly effective standard treatment for macular degeneration-related macular edema, particularly in older age groups. Clinical evidence confirms that these injections successfully reduce retinal swelling, slow down disease progression, and significantly improve or stabilize visual acuity in elderly patients.</p>
+        
+        <p><strong>Can intravitreal injections be used to treat diabetic retinopathy?</strong><br/>
+        Absolutely. Intravitreal injections are a primary treatment option for advanced diabetic retinopathy and associated diabetic macular edema. Retinal specialists frequently use Anti-VEGF (Vascular Endothelial Growth Factor) medications. These drugs work by blocking the signals that cause abnormal, leaky blood vessels to grow in the retina, reducing swelling and preventing severe vision loss.</p>
       </>
     ),
     reels: [
@@ -41,7 +182,124 @@ export const treatmentsData = {
     desc: 'MICS technology • Monofocal, Toric & Multifocal lenses.', 
     fullDesc: (
       <>
-        <p>We offer advanced micro-incision cataract surgery (MICS) with premium intraocular lenses (IOLs). The procedure is painless, minimally invasive, and designed to restore crystal clear vision. Our patients typically experience incredibly rapid recovery times.</p>
+        <h3>CATARACT</h3>
+        <p>Experience safe, effective cataract removal and advanced lens replacement at Jaipur Netralaya. Our state-of-the-art eye surgery clinic utilizes cutting-edge phacoemulsification technology and premium intraocular lenses (IOLs) to safely restore your vision and bring clarity back to your life.</p>
+        
+        <h4>Understanding Cataracts and Their Impact on Vision</h4>
+        <h5>Cataracts: A Clouding of the Eye's Lens</h5>
+        <p>A cataract is the gradual clouding of the eye's natural lens, which severely impacts your ability to see clearly. In a healthy eye, the clear lens precisely focuses light onto the retina to produce sharp, vivid images. When a cataract develops, this vital process is disrupted, resulting in foggy or distorted vision.</p>
+        
+        <h5>What Causes Cataracts?</h5>
+        <ul>
+          <li><strong>Aging:</strong> The most common cause. As we age, natural proteins within the lens begin to clump together, gradually clouding specific areas.</li>
+          <li><strong>Medical Conditions:</strong> Conditions like diabetic retinopathy—where high blood sugar damages retinal blood vessels—significantly accelerate cataract formation.</li>
+          <li><strong>Trauma and Genetics:</strong> Physical eye injuries, long-term steroid use, or certain genetic predispositions can also lead to early-onset cataracts.</li>
+        </ul>
+        
+        <h5>Common Types of Cataracts</h5>
+        <ul>
+          <li><strong>Nuclear Cataract:</strong> Forms deep in the center (nucleus) of the lens and is typically associated with the natural aging process.</li>
+          <li><strong>Cortical Cataract:</strong> Begins as whitish streaks or wedges on the outer edges of the lens cortex, often impairing peripheral or side vision.</li>
+          <li><strong>Posterior Subcapsular Cataract:</strong> Develops at the back of the lens capsule. This type progresses rapidly and causes severe glare or halos around lights.</li>
+          <li><strong>Congenital Cataract:</strong> Present at birth or developed during early childhood due to genetic factors or maternal infections during pregnancy.</li>
+        </ul>
+        
+        <h5>Symptoms and Effects of Cataracts</h5>
+        <p>Cataract symptoms usually start small but progressively worsen over time. Common warning signs include:</p>
+        <ul>
+          <li><strong>Blurred or Cloudy Vision:</strong> Your eyesight may feel constantly fuzzy, foggy, or hazy.</li>
+          <li><strong>Increased Light Sensitivity:</strong> Bright sunlight or oncoming headlights cause painful glare.</li>
+          <li><strong>Poor Night Vision:</strong> Driving at night becomes difficult due to halos around light sources.</li>
+          <li><strong>Faded Colors:</strong> Vibrant colors begin to look yellowed, dull, or washed out.</li>
+          <li><strong>Double Vision:</strong> Experiencing multiple or double images in a single eye.</li>
+        </ul>
+        
+        <h5>Impact on Daily Activities and Overall Well-being</h5>
+        <p>Leaving cataracts untreated makes simple everyday activities—such as reading, driving, or recognizing faces—increasingly difficult. This loss of independence can significantly impact your overall well-being, raising the risk of falls and reducing your quality of life. Fortunately, advanced cataract surgery at Jaipur Netralaya can fully reverse this vision loss.</p>
+        
+        <hr />
+        
+        <h4>How the Procedure Works: Step-by-Step</h4>
+        <p>At Jaipur Netralaya, we perform phacoemulsification (often called micro-incision cataract surgery), which is the global gold standard for safe, painless, and rapid vision restoration.</p>
+        <ul>
+          <li><strong>Step 1: Gentle Numbing:</strong> We apply specialized numbing eye drops so you experience a completely painless, stitchless, and injection-free procedure.</li>
+          <li><strong>Step 2: Micro-Incision:</strong> Our expert eye surgeon makes a microscopic incision (less than 3mm) on the side of the cornea.</li>
+          <li><strong>Step 3: Ultrasound Breakdown:</strong> A high-frequency ultrasound probe gently breaks the cloudy cataract lens into tiny fragments, which are then safely vacuumed out.</li>
+          <li><strong>Step 4: IOL Insertion:</strong> A premium, flexible intraocular lens (IOL) is folded, inserted through the same micro-incision, and unfolded into the exact permanent position of your old lens.</li>
+          <li><strong>Step 5: Natural Healing:</strong> The incision is self-sealing. No stitches or patches are required, allowing you to walk out of the clinic shortly after the procedure.</li>
+        </ul>
+        
+        <h4>Choosing the Right Intraocular Lens (IOL)</h4>
+        <p>Replacing your cloudy lens offers a unique opportunity to correct your pre-existing refractive errors (like nearsightedness, farsightedness, or astigmatism). At Jaipur Netralaya, we provide top-tier, international-standard lens options customized to your lifestyle:</p>
+        
+        <div className="overflow-x-auto my-6">
+          <table className="w-full text-left border-collapse">
+            <thead>
+              <tr className="bg-slate-100">
+                <th className="p-3 border">Lens Type</th>
+                <th className="p-3 border">How It Works</th>
+                <th className="p-3 border">Ideal For</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="p-3 border">Monofocal IOLs</td>
+                <td className="p-3 border">Fixed to focus at one specific distance (usually distance vision).</td>
+                <td className="p-3 border">Patients who don't mind wearing reading glasses for close-up tasks.</td>
+              </tr>
+              <tr>
+                <td className="p-3 border">Multifocal / Trifocal IOLs</td>
+                <td className="p-3 border">Designed with multiple focal points to provide clear vision at near, intermediate, and far distances.</td>
+                <td className="p-3 border">Patients seeking maximum freedom from glasses for reading, computer work, and driving.</td>
+              </tr>
+              <tr>
+                <td className="p-3 border">Toric IOLs</td>
+                <td className="p-3 border">Specially engineered to correct pre-existing astigmatism alongside cataract removal.</td>
+                <td className="p-3 border">Patients with corneal astigmatism who want sharp, blur-free distance vision without glasses.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        
+        <h4>Post-Surgery Care and Recovery Expectations</h4>
+        <p>Cataract surgery at Jaipur Netralaya boasts an exceptionally high success rate with minimal downtime. Most patients notice a dramatic improvement in visual clarity within just 24 to 48 hours.</p>
+        
+        <h5>What to Expect During Recovery</h5>
+        <ul>
+          <li><strong>Mild Sensations:</strong> Grittiness, slight watering, or mild redness are completely normal and resolve within a few days.</li>
+          <li><strong>Immediate Mobility:</strong> You can resume light activities, like walking or watching television, the very next day.</li>
+        </ul>
+        
+        <h5>Essential Post-Operative Care Tips</h5>
+        <ul>
+          <li><strong>Use Prescribed Drops:</strong> Strictly apply the antibiotic and anti-inflammatory eye drops exactly as directed by our surgeons.</li>
+          <li><strong>Protect Your Eyes:</strong> Wear the protective sunglasses provided by our clinic to shield your eyes from bright light and accidental rubbing.</li>
+          <li><strong>Avoid Water Exposure:</strong> Prevent splashing water directly into your face or swimming for the first week to keep the eye sterile.</li>
+          <li><strong>Skip Strenuous Exercise:</strong> Avoid heavy lifting or intense workouts for about two weeks to prevent pressure build-up in the eye.</li>
+        </ul>
+        
+        <h4>Why Choose Jaipur Netralaya for Your Cataract Surgery?</h4>
+        <p>As a leading eye care center in Jaipur, we pair world-class ophthalmic surgeons with the latest diagnostic and surgical technology. We are dedicated to providing clear, precise vision with compassionate, personalized patient care.</p>
+        <p>Regain your clarity and independence today.</p>
+        
+        <h4>Frequently Asked Questions (FAQs) About Cataract Surgery</h4>
+        <p><strong>Q1: Is cataract surgery painful?</strong><br/>
+        Ans: No, cataract surgery is completely painless. Before the procedure starts at Jaipur Netralaya, our surgeons apply advanced local anesthetic eye drops to fully numb your eye. You will remain awake and comfortable during the quick 15-to-20-minute procedure, experiencing nothing more than mild pressure.</p>
+        
+        <p><strong>Q2: What is the cost of cataract surgery in Jaipur?</strong><br/>
+        Ans: The cost of cataract surgery in Jaipur typically ranges from ₹20,000 to ₹1,00,000+ per eye. The exact cost depends on several individual factors, including the surgical technique used, the complexity of the case, and most importantly, your choice of Intraocular Lens (IOL)—such as Monofocal, Multifocal, or Toric lenses. At Jaipur Netralaya, we offer transparent pricing plans and accept major health insurances and empanelments to make world-class eye care accessible.</p>
+        
+        <p><strong>Q3: How long does it take to recover from cataract surgery?</strong><br/>
+        Ans: Most patients notice a significant improvement in their vision within 24 to 48 hours after the procedure. However, the complete healing and stabilization of the eye take about 4 to 6 weeks. During this recovery phase, you will simply need to use prescribed eye drops and follow basic safety precautions.</p>
+        
+        <p><strong>Q4: Can cataracts grow back after surgery?</strong><br/>
+        Ans: No, a cataract cannot return because the eye's natural lens is permanently removed and replaced with an artificial intraocular lens (IOL). However, some patients may develop a common, easily treatable condition called Posterior Capsular Opacification (PCO), often referred to as a "secondary cataract." This causes vision to become slightly blurry months or years later, but it can be permanently corrected in just a few minutes using a painless, in-office YAG Laser procedure.</p>
+        
+        <p><strong>Q5: Will I still need glasses after cataract surgery?</strong><br/>
+        Ans: Your dependence on glasses depends entirely on the type of Intraocular Lens (IOL) you select. If you choose a standard Monofocal lens, you will likely still need reading glasses for close-up tasks. However, if you opt for advanced Multifocal or Trifocal lenses, they are designed to provide a full range of clear vision (near, intermediate, and far), eliminating or drastically reducing your need for glasses altogether.</p>
+        
+        <h4>Schedule Your Advanced Cataract Consultation Today</h4>
+        <p>Don't let blurry vision hold you back from enjoying life's vibrant moments. Contact Jaipur Netralaya today to schedule a comprehensive eye examination with the best cataract specialists in Jaipur.</p>
       </>
     ),
     reels: [
@@ -53,7 +311,47 @@ export const treatmentsData = {
     desc: 'Combined surgical management of challenging cataracts.',
     fullDesc: (
       <>
-        <p>Cataracts complicated by co-existing conditions like glaucoma or retinal disorders require a highly skilled and comprehensive surgical approach. Our experienced team seamlessly manages these multi-faceted cases to ensure optimal visual outcomes while addressing all underlying conditions.</p>
+        <h3>Comprehensive Care for Complicated Cataracts: Managing Glaucoma and Retinal Diseases Simultaneously</h3>
+        <p>Managing a cataract is highly straightforward for most patients. However, when a cataract coexists with complex conditions like glaucoma or advanced retinal diseases, it requires a highly specialized, multidisciplinary approach.</p>
+        <p>At Jaipur Netralaya, we specialize in advanced and combined microsurgeries. We ensure that patients with multi-layered ocular conditions receive safe, coordinated, and effective care under one roof.</p>
+        
+        <h4>Understanding Complicated Cataracts</h4>
+        <p>A cataract is considered "complicated" when it occurs alongside other pre-existing eye conditions or structural challenges within the eye. When a patient has a cataract in addition to glaucoma or retinal disease (such as diabetic retinopathy, macular degeneration, or a retinal tear), a standard cataract procedure carries higher risks.</p>
+        <p>In these cases, a combined surgical approach or a carefully sequenced treatment plan is essential to safeguard your remaining vision and ensure optimal recovery.</p>
+        
+        <h4>The Challenge of Co-existing Glaucoma and Cataracts</h4>
+        <p>Glaucoma causes progressive damage to the optic nerve, often driven by elevated intraocular pressure (IOP). When a dense cataract develops in a glaucoma patient, it can further compromise vision and sometimes even worsen fluid drainage, leading to spikes in eye pressure.</p>
+        
+        <h5>Combined Cataract and Glaucoma Surgery</h5>
+        <p>For patients requiring both cataract removal and better pressure control, our surgeons frequently perform combined procedures. By combining phacoemulsification (cataract removal) with advanced glaucoma interventions—such as Micro-Invasive Glaucoma Surgery (MIGS) or traditional trabeculectomy—we can achieve two goals in a single surgical session:</p>
+        <ul>
+          <li>Clearer vision via a new intraocular lens (IOL)</li>
+          <li>Better, more stable control of eye pressure</li>
+          <li>A reduced dependence on daily glaucoma eye drops</li>
+        </ul>
+        
+        <h4>Navigating Cataracts and Retinal Disorders</h4>
+        <p>The presence of a retinal disease changes how a cataract surgery is planned and executed. A dense cataract can block an ophthalmologist's view of the retina, making it difficult to monitor or treat underlying retinal conditions. Conversely, standard cataract surgery can sometimes exacerbate macular edema (swelling) if not managed properly.</p>
+        
+        <h5>Integrated Cataract and Vitreoretinal Surgery</h5>
+        <p>When a patient suffers from both a visually significant cataract and a severe retinal condition—such as a retinal detachment, vitreous hemorrhage, or advanced epiretinal membrane—our anterior segment and vitreoretinal specialists work in tandem.</p>
+        <p>Through combined phaco-vitrectomy surgery, we can safely remove the cloudy lens and instantly gain clear access to the back of the eye to repair the retina during the same procedure. This minimizes surgical trauma to the eye and shortens the overall recovery period for the patient.</p>
+        
+        <h4>Why Choose Jaipur Netralaya for Complex Eye Surgeries?</h4>
+        <p>Treating interconnected eye diseases requires advanced infrastructure and seamless collaboration between different sub-specialties. Jaipur Netralaya stands out as a premier referral center for complicated eye conditions due to several key factors:</p>
+        <ul>
+          <li><strong>Multidisciplinary Expertise:</strong> Our team includes experienced cataract surgeons, glaucoma specialists, and vitreoretinal surgeons who collaborate closely on every complex case.</li>
+          <li><strong>Advanced Diagnostic Suite:</strong> We utilize high-resolution optical coherence tomography (OCT), advanced visual field testing, and digital angiography to map out every detail of your eye before entering the operating room.</li>
+          <li><strong>State-of-the-Art Surgical Technology:</strong> Our modular operation theaters are equipped with high-end surgical microscopes, phacoemulsification systems, and vitrectomy machines designed for micro-incision surgery.</li>
+          <li><strong>Customized Intraocular Lens (IOL) Selection:</strong> We carefully select the safest and most effective intraocular lens based on your specific retinal and glaucoma status, prioritizing long-term visual stability over a quick fix.</li>
+        </ul>
+        
+        <h4>What to Expect: Your Treatment Journey</h4>
+        <ol>
+          <li><strong>Detailed Pre-Operative Evaluation:</strong> You will undergo a comprehensive evaluation where specialists from our cataract, glaucoma, and retina departments examine your eyes to build a coordinated surgical roadmap.</li>
+          <li><strong>Tailored Surgical Planning:</strong> We determine whether a combined single-stage surgery or a staged approach (treating one condition before the other) is the safest route for your unique eyes.</li>
+          <li><strong>Dedicated Post-Operative Monitoring:</strong> Recovery from complex surgeries requires vigilant follow-up care. Our team monitors your healing, inflammation levels, and intraocular pressure closely in the days and weeks following surgery to ensure the best possible visual outcome.</li>
+        </ol>
       </>
     ),
     reels: [
@@ -65,7 +363,63 @@ export const treatmentsData = {
     desc: 'Cosmetic and reconstructive procedures around the eyes.', 
     fullDesc: (
       <>
-        <p>Our oculoplastic services blend the precision of ophthalmic microsurgery with the aesthetic understanding of plastic surgery. We expertly handle cosmetic and reconstructive procedures around the eyes, including droopy eyelids (ptosis), orbital trauma, and tear duct abnormalities.</p>
+        <h3>Advanced Oculoplasty Services in Jaipur – Jaipur Netralaya</h3>
+        <p>Your eyes deserve the perfect balance of healthy vision and natural aesthetic beauty. At Jaipur Netralaya, we provide specialized oculoplasty services in Jaipur to treat medical, reconstructive, and cosmetic conditions affecting the areas around your eyes.</p>
+        <p>Whether you need corrective surgery for drooping eyelids, treatment for blocked tear ducts, or cosmetic facial rejuvenation, our expert oculoplastic surgeons deliver world-class care using state-of-the-art technology.</p>
+        
+        <h4>What is Oculoplasty?</h4>
+        <p>Oculoplasty (also known as oculoplastic surgery) is a specialized branch of ophthalmology that focuses on the plastic and reconstructive surgery of the structures surrounding the eye. This includes the eyelids, tear ducts (lacrimal system), orbit (eye socket), and adjacent facial structures.</p>
+        <p>Unlike general plastic surgeons, an oculoplastic surgeon is primarily an ophthalmologist, ensuring that your vision and eye health remain the top priority during any structural or cosmetic alteration.</p>
+        
+        <h4>Comprehensive Oculoplastic Treatments We Offer</h4>
+        <p>At Jaipur Netralaya, we diagnose and treat a wide range of orbital and eyelid disorders:</p>
+        
+        <h5>1. Eyelid Disorders & Corrective Surgeries</h5>
+        <ul>
+          <li><strong>Ptosis Surgery:</strong> Correction of drooping upper eyelids that interfere with your vision or appearance.</li>
+          <li><strong>Entropion & Ectropion Repair:</strong> Fixing eyelids that fold inward (rubbing against the cornea) or turn outward (causing severe dryness).</li>
+          <li><strong>Eyelid Tumors & Reconstruction:</strong> Safe removal of benign or malignant eyelid cysts and tumors followed by precise reconstructive surgery.</li>
+        </ul>
+        
+        <h5>2. Lacrimal (Tear Duct) Disorders</h5>
+        <ul>
+          <li><strong>Dacryocystorhinostomy (DCR):</strong> A specialized surgical procedure to bypass blocked tear ducts and resolve chronic watery eyes or painful infections.</li>
+          <li><strong>Pediatric Tear Duct Probing:</strong> Gentle interventions for infants born with congenital tear duct blockages.</li>
+        </ul>
+        
+        <h5>3. Orbital and Socket Reconstruction</h5>
+        <ul>
+          <li><strong>Thyroid Eye Disease (TED) Management:</strong> Comprehensive medical and surgical care for eye bulging or double vision caused by thyroid disorders.</li>
+          <li><strong>Enucleation & Evisceration:</strong> Safe removal of a non-functional, painful, or diseased eye, followed by the placement of advanced orbital implants.</li>
+          <li><strong>Custom Artificial Eyes (Prosthetics):</strong> Designing highly natural-looking prosthetic eyes to restore structural symmetry and confidence.</li>
+        </ul>
+        
+        <h5>4. Cosmetic Oculoplasty & Facial Rejuvenation</h5>
+        <ul>
+          <li><strong>Blepharoplasty (Eyelid Lift):</strong> Removal of excess skin and fat bags from the upper or lower eyelids to restore a youthful, refreshed appearance.</li>
+          <li><strong>Botox & Dermal Fillers:</strong> Non-surgical aesthetic treatments to smooth out crow's feet, frown lines, and wrinkles around the eyes.</li>
+        </ul>
+        
+        <h4>Why Choose Jaipur Netralaya for Oculoplasty in Jaipur?</h4>
+        <ul>
+          <li><strong>Experienced Oculoplastic Specialists:</strong> Our surgeons possess dual expertise in microsurgical ophthalmology and plastic reconstruction.</li>
+          <li><strong>Advanced Diagnostics & Infrastructure:</strong> We utilize cutting-edge surgical suites and diagnostic tools for precise, predictable outcomes.</li>
+          <li><strong>Patient-Centric Care:</strong> Every treatment plan is customized to suit your unique medical needs and aesthetic goals.</li>
+          <li><strong>Minimal Recovery Time:</strong> We employ minimally invasive techniques to ensure faster healing and minimal scarring.</li>
+        </ul>
+        
+        <h4>Frequently Asked Questions (FAQs)</h4>
+        <p><strong>What are the signs that I need to see an oculoplastic surgeon?</strong><br/>
+        You should consult an oculoplastic specialist if you experience constantly watery eyes, drooping eyelids that block your upper vision, eyelids that turn inward or outward, involuntary blinking (blepharospasm), or lumps on your eyelids.</p>
+        
+        <p><strong>Is cosmetic eyelid surgery (blepharoplasty) safe?</strong><br/>
+        Yes. When performed by a qualified oculoplastic surgeon who understands the delicate anatomy of the eye, blepharoplasty is highly safe and effectively rejuvenates your look without altering your natural expressions.</p>
+        
+        <p><strong>How long is the recovery period after oculoplastic surgery?</strong><br/>
+        Most minor eyelid and tear duct surgeries allow patients to return to light daily activities within 3 to 7 days. Mild swelling or bruising is normal and typically subsides within two weeks.</p>
+        
+        <h4>Schedule Your Consultation Today</h4>
+        <p>Don't let eyelid or tear duct issues compromise your vision, comfort, or confidence. Book an appointment with the best oculoplastic surgeon in Jaipur at Jaipur Netralaya.</p>
       </>
     ),
     reels: [

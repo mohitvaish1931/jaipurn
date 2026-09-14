@@ -25,6 +25,7 @@ export default function Footer() {
             <ul className="space-y-4 font-sans text-slate-600 font-light">
               <li><Link to="/about" className="hover:text-accent-500 transition-colors">About Us</Link></li>
               <li><Link to="/doctors" className="hover:text-accent-500 transition-colors">Our Doctors</Link></li>
+              <li><Link to="/nabh-accreditation" className="hover:text-accent-500 transition-colors">NABH Accreditation</Link></li>
               <li><Link to="#" className="hover:text-accent-500 transition-colors">Privacy Policy</Link></li>
               <li><Link to="/cancellation-policy" className="hover:text-accent-500 transition-colors">Cancellation & Refund Policy</Link></li>
             </ul>

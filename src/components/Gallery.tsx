@@ -1,28 +1,47 @@
 export default function Gallery() {
-  const images = Array.from({ length: 12 }, (_, i) => `/gallery/surgeryroom_img_${i + 1}_1.jpeg`);
+  const patientJourney = [
+    { src: '/gallery/surgeryroom_img_1_1.jpeg', alt: 'Welcoming Reception & Waiting Lounge', category: 'Reception' },
+    { src: '/gallery/surgeryroom_img_2_1.jpeg', alt: 'Advanced OPD & Consultation Room', category: 'OPD' },
+    { src: '/gallery/surgeryroom_img_3_1.jpeg', alt: 'State-of-the-art Diagnostics Center', category: 'Diagnostics' },
+    { src: '/gallery/surgeryroom_img_4_1.jpeg', alt: 'High-Tech Retinal Imaging Suite', category: 'Diagnostics' },
+    { src: '/gallery/surgeryroom_img_5_1.jpeg', alt: 'Pre-operative Preparation Area', category: 'Preparation' },
+    { src: '/gallery/surgeryroom_img_6_1.jpeg', alt: 'Ultra-sterile Modular Operation Theater (OT)', category: 'Modular OT' },
+    { src: '/gallery/surgeryroom_img_7_1.jpeg', alt: 'Advanced Surgical Microscope Setup', category: 'Modular OT' },
+    { src: '/gallery/surgeryroom_img_8_1.jpeg', alt: 'Post-operative Recovery & Care Unit', category: 'Recovery' },
+    { src: '/gallery/surgeryroom_img_9_1.jpeg', alt: 'Patient Counseling Room', category: 'Counseling' },
+    { src: '/gallery/surgeryroom_img_10_1.jpeg', alt: 'In-house Pharmacy', category: 'Pharmacy' },
+    { src: '/gallery/surgeryroom_img_11_1.jpeg', alt: 'Premium Private Wards', category: 'Wards' },
+    { src: '/gallery/surgeryroom_img_12_1.jpeg', alt: 'Hospital Exterior', category: 'Exterior' }
+  ];
 
   return (
     <section className="py-32 bg-white relative">
       <div className="container mx-auto px-6">
         <div className="mb-20 text-center">
-          <span className="text-xs tracking-[0.3em] text-accent-500 uppercase font-sans mb-4 block">Infrastructure</span>
+          <span className="text-xs tracking-[0.3em] text-accent-500 uppercase font-sans mb-4 block">Hospital Tour</span>
           <h2 className="font-display text-4xl md:text-5xl font-medium text-slate-900 tracking-tight">
-            State-of-the-Art <span className="text-slate-500">Facilities.</span>
+            The Patient <span className="text-slate-500">Journey.</span>
           </h2>
           <p className="mt-6 text-slate-600 font-sans font-light max-w-2xl mx-auto">
-            Take a look inside our advanced surgical suites and clinical rooms, equipped with world-class technology to ensure the highest standard of patient care.
+            Experience our world-class infrastructure. From a welcoming reception to ultra-sterile modular operation theaters and relaxing recovery rooms, every step is designed for your comfort and safety.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-          {images.map((src, idx) => (
-            <div key={idx} className="relative group overflow-hidden rounded-xl aspect-[4/3] bg-slate-100">
-              <img 
-                src={src} 
-                alt={`Jaipur Netralaya Facility ${idx + 1}`} 
-                className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-slate-900/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {patientJourney.map((item, idx) => (
+            <div key={idx} className="group flex flex-col gap-3">
+              <div className="relative overflow-hidden rounded-xl aspect-[4/3] bg-slate-100 shadow-sm border border-slate-100">
+                <img 
+                  src={item.src} 
+                  alt={item.alt} 
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-slate-900/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="absolute top-4 left-4 px-3 py-1 bg-white/90 backdrop-blur-sm rounded-full shadow-sm">
+                  <span className="text-xs font-sans tracking-widest uppercase text-slate-800">{item.category}</span>
+                </div>
+              </div>
+              <p className="font-sans text-slate-700 font-medium text-center">{item.alt}</p>
             </div>
           ))}
         </div>

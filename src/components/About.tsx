@@ -24,18 +24,18 @@ export default function About() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
           
           <div className="lg:col-span-5 lg:sticky lg:top-40 h-fit">
-            <span className="text-xs tracking-[0.3em] text-accent-500 uppercase font-sans mb-6 block">The Legacy</span>
+            <span className="text-xs tracking-[0.3em] text-accent-500 uppercase font-sans mb-6 block">Introduction & Legacy</span>
             <h2 className="font-display text-5xl md:text-7xl font-medium text-slate-900 mb-8 leading-[1.1] tracking-tight">
-              Decades of <br/> Uncompromising <br/> <span className="text-slate-500">Excellence.</span>
+              World-Class <br/> Vision <br/> <span className="text-slate-500">Care.</span>
             </h2>
             <p className="text-slate-600 font-sans text-lg md:text-xl font-light leading-relaxed max-w-lg mb-6">
-              Established with a vision to deliver state-of-the-art treatment, Jaipur Netralaya provides top-quality healthcare with experienced doctors, emergency services, and round-the-clock support. We are dedicated to being a trusted leader in quality, accessible, and compassionate healthcare across Rajasthan.
+              Welcome to Jaipur Netralaya, the best eye hospital jaipur trusts for world-class vision care. As a premier retina hospital in jaipur, we specialize in advanced retina treatment jaipur residents rely on, including retinal detachment and injections and laser treatments for diabetic retinopathy.
             </p>
             <p className="text-slate-600 font-sans text-lg md:text-xl font-light leading-relaxed max-w-lg mb-6">
-              As the premier eye care and retina hospital, our facility is equipped with the latest diagnostic and surgical technologies. We specialize in comprehensive eye exams, advanced cataract surgery using premium intraocular lenses (IOLs), intricate retinal detachment repairs, diabetic retinopathy management, and glaucoma treatments.
+              Jaipur Netralaya was established in 2021 by Dr Sidharth Bhardwaj and Dr Divya Agrawal with the intent of providing world-class retina treatment at affordable prices. Over a period of 5 years, building patient trust, it has expanded into a multispecialty eye hospital providing excellent comprehensive services in the specialties of Cataract, Cornea, Uveitis, Squint, and Glaucoma.
             </p>
             <p className="text-slate-600 font-sans text-lg md:text-xl font-light leading-relaxed max-w-lg">
-              Our team of highly qualified ophthalmologists and surgeons bring decades of clinical expertise. By continually adopting groundbreaking medical advancements and maintaining stringent safety protocols, Jaipur Netralaya ensures that every patient receives personalized, world-class vision care. Your sight is our ultimate priority.
+              Our hospital features the best eye specialist retina specialist in jaipur Dr Sidharth Bhardwaj to manage complex conditions. If you need a trusted eye doctor near me or a leading vitreoretinal surgeon jaipur, visit us for affordable, comprehensive care.
             </p>
           </div>
 

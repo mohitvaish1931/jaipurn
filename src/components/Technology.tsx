@@ -2,9 +2,10 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
 
 const features = [
-  { title: 'Sub-Micron Scanning', desc: 'Flawless 3D OCT imaging for absolute diagnostic perfection.' },
-  { title: 'Predictive Algorithms', desc: 'AI catching anomalies before they physically manifest.' },
-  { title: 'Robotic Interventions', desc: 'Automated precision for high-risk surgical environments.' },
+  { title: 'Alcon Constellation® Vision System', desc: 'The gold standard for advanced vitreoretinal surgery, offering unparalleled control and precision.' },
+  { title: 'Zeiss OPMI Lumera® 700', desc: 'The world\'s best surgical microscope providing crystal-clear visualization for intricate eye surgeries.' },
+  { title: 'Alcon Centurion® Vision System', desc: 'State-of-the-art phacoemulsification technology for safe, micro-incision cataract surgery.' },
+  { title: 'Zeiss OCT', desc: 'High-definition 3D cross-sectional imaging for flawless diagnosis of retinal and macular conditions.' },
 ];
 
 export default function Technology() {
@@ -53,7 +54,7 @@ export default function Technology() {
           <div className="order-1 lg:order-2">
             <span className="text-xs tracking-[0.3em] text-accent-500 uppercase font-sans mb-6 block">Infrastructure</span>
             <h2 className="font-display text-5xl md:text-6xl font-medium text-slate-900 mb-12 leading-[1.1] tracking-tight">
-              Absolute <br/> <span className="text-slate-500">Precision.</span>
+              Advanced Technology <br/> <span className="text-slate-500">For Your Eyes.</span>
             </h2>
             
             <div className="space-y-12">

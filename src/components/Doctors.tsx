@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function Doctors() {
   return (
     <section className="py-32 bg-background relative" id="doctors">
@@ -44,9 +46,9 @@ export default function Doctors() {
               </div>
             </div>
 
-            <button className="self-start text-slate-800 hover:text-slate-900 font-sans uppercase tracking-[0.2em] text-sm pb-1 border-b border-accent-500 transition-colors">
+            <Link to="/about" className="self-start text-slate-800 hover:text-slate-900 font-sans uppercase tracking-[0.2em] text-sm pb-1 border-b border-accent-500 transition-colors">
               View Full Credentials
-            </button>
+            </Link>
           </div>
 
         </div>
@@ -86,9 +88,9 @@ export default function Doctors() {
               </div>
             </div>
 
-            <button className="self-end text-slate-800 hover:text-slate-900 font-sans uppercase tracking-[0.2em] text-sm pb-1 border-b border-accent-500 transition-colors">
+            <Link to="/about" className="self-end text-slate-800 hover:text-slate-900 font-sans uppercase tracking-[0.2em] text-sm pb-1 border-b border-accent-500 transition-colors">
               View Full Credentials
-            </button>
+            </Link>
           </div>
 
         </div>

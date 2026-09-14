@@ -1,17 +1,13 @@
 export default function Gallery() {
-  const patientJourney = [
-    { src: '/gallery/surgeryroom_img_1_1.jpeg', alt: 'Welcoming Reception & Waiting Lounge', category: 'Reception' },
-    { src: '/gallery/surgeryroom_img_2_1.jpeg', alt: 'Advanced OPD & Consultation Room', category: 'OPD' },
-    { src: '/gallery/surgeryroom_img_3_1.jpeg', alt: 'State-of-the-art Diagnostics Center', category: 'Diagnostics' },
-    { src: '/gallery/surgeryroom_img_4_1.jpeg', alt: 'High-Tech Retinal Imaging Suite', category: 'Diagnostics' },
-    { src: '/gallery/surgeryroom_img_5_1.jpeg', alt: 'Pre-operative Preparation Area', category: 'Preparation' },
-    { src: '/gallery/surgeryroom_img_6_1.jpeg', alt: 'Ultra-sterile Modular Operation Theater (OT)', category: 'Modular OT' },
-    { src: '/gallery/surgeryroom_img_7_1.jpeg', alt: 'Advanced Surgical Microscope Setup', category: 'Modular OT' },
-    { src: '/gallery/surgeryroom_img_8_1.jpeg', alt: 'Post-operative Recovery & Care Unit', category: 'Recovery' },
-    { src: '/gallery/surgeryroom_img_9_1.jpeg', alt: 'Patient Counseling Room', category: 'Counseling' },
-    { src: '/gallery/surgeryroom_img_10_1.jpeg', alt: 'In-house Pharmacy', category: 'Pharmacy' },
-    { src: '/gallery/surgeryroom_img_11_1.jpeg', alt: 'Premium Private Wards', category: 'Wards' },
-    { src: '/gallery/surgeryroom_img_12_1.jpeg', alt: 'Hospital Exterior', category: 'Exterior' }
+  const galleryImages = [
+    { src: '/gallery/surgeryroom_img_9_1.jpeg', alt: 'Hospital Exterior View', category: 'Exterior' },
+    { src: '/gallery/surgeryroom_img_11_1.jpeg', alt: 'Welcoming Reception Area', category: 'Reception' },
+    { src: '/gallery/surgeryroom_img_12_1.jpeg', alt: 'Spacious Waiting Lounge', category: 'Lobby' },
+    { src: '/gallery/surgeryroom_img_7_1.jpeg', alt: 'Advanced Consultation Room', category: 'OPD' },
+    { src: '/gallery/surgeryroom_img_3_1.jpeg', alt: 'State-of-the-art Diagnostics', category: 'Diagnostics' },
+    { src: '/gallery/surgeryroom_img_2_1.jpeg', alt: 'Comprehensive Eye Testing', category: 'Diagnostics' },
+    { src: '/gallery/surgeryroom_img_1_1.jpeg', alt: 'Fully Equipped Operation Theatre', category: 'Modular OT' },
+    { src: '/gallery/surgeryroom_img_4_1.jpeg', alt: 'Comfortable Post-Operative Recovery', category: 'Recovery' }
   ];
 
   return (
@@ -28,7 +24,7 @@ export default function Gallery() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {patientJourney.map((item, idx) => (
+          {galleryImages.map((item, idx) => (
             <div key={idx} className="group flex flex-col gap-3">
               <div className="relative overflow-hidden rounded-xl aspect-[4/3] bg-slate-100 shadow-sm border border-slate-100">
                 <img 

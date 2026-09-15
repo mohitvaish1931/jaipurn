@@ -24,10 +24,10 @@ export default function NabhPage() {
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-12">
                 <div className="bg-white p-4 rounded-xl shadow-sm border border-slate-100">
-                  <img src="/WhatsApp Image 2026-07-07 at 00.32.25.jpeg" alt="NABH Certificate 1" className="w-full h-auto rounded-lg object-contain" />
+                  <img src="/nabh-certificate-1.png" alt="NABH Certificate 1" className="w-full h-auto rounded-lg object-contain" />
                 </div>
                 <div className="bg-white p-4 rounded-xl shadow-sm border border-slate-100">
-                  <img src="/WhatsApp Image 2026-07-07 at 00.32.25.jpeg" alt="NABH Certificate 2" className="w-full h-auto rounded-lg object-contain" />
+                  <img src="/nabh-certificate-2.png" alt="NABH Certificate 2" className="w-full h-auto rounded-lg object-contain" />
                 </div>
               </div>
 

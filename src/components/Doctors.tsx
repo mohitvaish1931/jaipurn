@@ -46,7 +46,7 @@ export default function Doctors() {
               </div>
             </div>
 
-            <Link to="/about" className="self-start text-slate-800 hover:text-slate-900 font-sans uppercase tracking-[0.2em] text-sm pb-1 border-b border-accent-500 transition-colors">
+            <Link to="/doctor/sidharth-bhardwaj" className="self-start text-slate-800 hover:text-slate-900 font-sans uppercase tracking-[0.2em] text-sm pb-1 border-b border-accent-500 transition-colors">
               View Full Credentials
             </Link>
           </div>
@@ -88,7 +88,7 @@ export default function Doctors() {
               </div>
             </div>
 
-            <Link to="/about" className="self-end text-slate-800 hover:text-slate-900 font-sans uppercase tracking-[0.2em] text-sm pb-1 border-b border-accent-500 transition-colors">
+            <Link to="/doctor/divya-agarwal" className="self-end text-slate-800 hover:text-slate-900 font-sans uppercase tracking-[0.2em] text-sm pb-1 border-b border-accent-500 transition-colors">
               View Full Credentials
             </Link>
           </div>

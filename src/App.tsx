@@ -12,6 +12,8 @@ import TreatmentsPage from './pages/TreatmentsPage';
 import DoctorsPage from './pages/DoctorsPage';
 import AppointmentPage from './pages/AppointmentPage';
 import NabhPage from './pages/NabhPage';
+import DrDivyaAgarwal from './pages/DrDivyaAgarwal';
+import DrSidharthBhardwaj from './pages/DrSidharthBhardwaj';
 
 import Insurance from './pages/Insurance';
 import CancellationPolicy from './pages/CancellationPolicy';
@@ -31,6 +33,8 @@ function App() {
             <Route path="/doctors" element={<DoctorsPage />} />
             <Route path="/appointment" element={<AppointmentPage />} />
             <Route path="/nabh-accreditation" element={<NabhPage />} />
+            <Route path="/doctor/divya-agarwal" element={<DrDivyaAgarwal />} />
+            <Route path="/doctor/sidharth-bhardwaj" element={<DrSidharthBhardwaj />} />
             <Route path="/insurance" element={<Insurance />} />
             <Route path="/cancellation-policy" element={<CancellationPolicy />} />
             <Route path="/blogs" element={<BlogListing />} />

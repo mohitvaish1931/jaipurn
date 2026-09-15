@@ -11,7 +11,7 @@ export default function Gallery() {
   ];
 
   return (
-    <section className="py-32 bg-white relative">
+    <section id="hospital-tour" className="py-32 bg-white relative">
       <div className="container mx-auto px-6">
         <div className="mb-20 text-center">
           <span className="text-xs tracking-[0.3em] text-accent-500 uppercase font-sans mb-4 block">Hospital Tour</span>

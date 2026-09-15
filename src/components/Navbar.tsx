@@ -28,6 +28,8 @@ export default function Navbar() {
           <Link to="/about" className="font-sans text-xs tracking-[0.2em] uppercase text-slate-600 hover:text-slate-900 transition-colors">Legacy</Link>
           <Link to="/treatments" className="font-sans text-xs tracking-[0.2em] uppercase text-slate-600 hover:text-slate-900 transition-colors">Clinical</Link>
           <Link to="/doctors" className="font-sans text-xs tracking-[0.2em] uppercase text-slate-600 hover:text-slate-900 transition-colors">Surgeons</Link>
+          <Link to="/insurance" className="font-sans text-xs tracking-[0.2em] uppercase text-slate-600 hover:text-slate-900 transition-colors">TPA & Insurance</Link>
+          <Link to="/#hospital-tour" className="font-sans text-xs tracking-[0.2em] uppercase text-slate-600 hover:text-slate-900 transition-colors">Hospital Tour</Link>
           <Link to="/nabh-accreditation" className="font-sans text-xs tracking-[0.2em] uppercase text-accent-500 hover:text-accent-600 font-bold transition-colors">NABH Accredited</Link>
           <Link to="/appointment" className="font-sans text-xs tracking-[0.2em] uppercase text-white bg-accent-500 px-6 py-3 rounded-full hover:bg-accent-600 transition-colors duration-300 shadow-md">
             Consult
@@ -48,6 +50,8 @@ export default function Navbar() {
           <Link to="/about" onClick={closeMenu} className="font-sans text-sm tracking-[0.2em] uppercase text-slate-700 hover:text-accent-500 transition-colors block py-2">Legacy</Link>
           <Link to="/treatments" onClick={closeMenu} className="font-sans text-sm tracking-[0.2em] uppercase text-slate-700 hover:text-accent-500 transition-colors block py-2">Clinical</Link>
           <Link to="/doctors" onClick={closeMenu} className="font-sans text-sm tracking-[0.2em] uppercase text-slate-700 hover:text-accent-500 transition-colors block py-2">Surgeons</Link>
+          <Link to="/insurance" onClick={closeMenu} className="font-sans text-sm tracking-[0.2em] uppercase text-slate-700 hover:text-accent-500 transition-colors block py-2">TPA & Insurance</Link>
+          <Link to="/#hospital-tour" onClick={closeMenu} className="font-sans text-sm tracking-[0.2em] uppercase text-slate-700 hover:text-accent-500 transition-colors block py-2">Hospital Tour</Link>
           <Link to="/nabh-accreditation" onClick={closeMenu} className="font-sans text-sm tracking-[0.2em] uppercase text-accent-500 font-bold hover:text-accent-600 transition-colors block py-2">NABH Accredited</Link>
           <Link to="/appointment" onClick={closeMenu} className="font-sans text-sm tracking-[0.2em] uppercase text-accent-500 font-semibold transition-colors block py-2">Consult</Link>
           

@@ -1,12 +1,7 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
 
-const features = [
-  { title: 'Alcon Constellation® Vision System', desc: 'The gold standard for advanced vitreoretinal surgery, offering unparalleled control and precision.' },
-  { title: 'Zeiss OPMI Lumera® 700', desc: 'The world\'s best surgical microscope providing crystal-clear visualization for intricate eye surgeries.' },
-  { title: 'Alcon Centurion® Vision System', desc: 'State-of-the-art phacoemulsification technology for safe, micro-incision cataract surgery.' },
-  { title: 'Zeiss OCT', desc: 'High-definition 3D cross-sectional imaging for flawless diagnosis of retinal and macular conditions.' },
-];
+
 
 export default function Technology() {
   const containerRef = useRef<HTMLDivElement>(null);

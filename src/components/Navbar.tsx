@@ -24,14 +24,14 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Menu */}
-        <div className="hidden xl:flex items-center gap-8">
-          <Link to="/about" className="font-sans text-xs tracking-[0.2em] uppercase text-slate-600 hover:text-slate-900 transition-colors">Legacy</Link>
-          <Link to="/treatments" className="font-sans text-xs tracking-[0.2em] uppercase text-slate-600 hover:text-slate-900 transition-colors">Clinical</Link>
-          <Link to="/doctors" className="font-sans text-xs tracking-[0.2em] uppercase text-slate-600 hover:text-slate-900 transition-colors">Surgeons</Link>
-          <Link to="/insurance" className="font-sans text-xs tracking-[0.2em] uppercase text-slate-600 hover:text-slate-900 transition-colors">TPA & Insurance</Link>
-          <Link to="/#hospital-tour" className="font-sans text-xs tracking-[0.2em] uppercase text-slate-600 hover:text-slate-900 transition-colors">Hospital Tour</Link>
-          <Link to="/nabh-accreditation" className="font-sans text-xs tracking-[0.2em] uppercase text-accent-500 hover:text-accent-600 font-bold transition-colors">NABH Accredited</Link>
-          <Link to="/appointment" className="font-sans text-xs tracking-[0.2em] uppercase text-white bg-accent-500 px-6 py-3 rounded-full hover:bg-accent-600 transition-colors duration-300 shadow-md">
+        <div className="hidden xl:flex items-center gap-3">
+          <Link to="/about" className="font-sans text-[10px] tracking-[0.18em] uppercase text-accent-600 bg-accent-50 border border-accent-200 rounded-full px-4 py-2.5 transition-all duration-300 hover:bg-accent-500 hover:text-white hover:border-accent-500">Legacy</Link>
+          <Link to="/treatments" className="font-sans text-[10px] tracking-[0.18em] uppercase text-accent-600 bg-accent-50 border border-accent-200 rounded-full px-4 py-2.5 transition-all duration-300 hover:bg-accent-500 hover:text-white hover:border-accent-500">Clinical</Link>
+          <Link to="/doctors" className="font-sans text-[10px] tracking-[0.18em] uppercase text-accent-600 bg-accent-50 border border-accent-200 rounded-full px-4 py-2.5 transition-all duration-300 hover:bg-accent-500 hover:text-white hover:border-accent-500">Surgeons</Link>
+          <Link to="/insurance" className="font-sans text-[10px] tracking-[0.18em] uppercase text-accent-600 bg-accent-50 border border-accent-200 rounded-full px-4 py-2.5 transition-all duration-300 hover:bg-accent-500 hover:text-white hover:border-accent-500">TPA & Insurance</Link>
+          <Link to="/#hospital-tour" className="font-sans text-[10px] tracking-[0.18em] uppercase text-accent-600 bg-accent-50 border border-accent-200 rounded-full px-4 py-2.5 transition-all duration-300 hover:bg-accent-500 hover:text-white hover:border-accent-500">Hospital Tour</Link>
+          <Link to="/nabh-accreditation" className="font-sans text-[10px] tracking-[0.18em] uppercase text-white bg-accent-500 border border-accent-500 rounded-full px-4 py-2.5 transition-all duration-300 hover:bg-accent-600 hover:border-accent-600">NABH Accredited</Link>
+          <Link to="/appointment" className="font-sans text-[10px] tracking-[0.18em] uppercase text-white bg-accent-500 px-5 py-2.5 rounded-full hover:bg-accent-600 transition-colors duration-300 shadow-md">
             Consult
           </Link>
         </div>

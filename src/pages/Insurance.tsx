@@ -76,6 +76,7 @@ export default function Insurance() {
               <li><strong>1.</strong> Cashless treatment under all Medical Insurance and TPA companies (List below)</li>
               <li><strong>2.</strong> Cashless OPD & Surgical Procedures under RGHS</li>
               <li><strong>3.</strong> Rajasthan University Empanelment</li>
+              <li><strong>4.</strong> Sanskrit University Empanelment</li>
             </ul>
           </div>
         </div>

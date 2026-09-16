@@ -48,13 +48,13 @@ export default function Home() {
 
   return (
     <>
-      <SEO 
+      <SEO
         title="Best Eye Hospital in Jaipur | Top Retina Specialist & Cataract Surgery"
         description="Jaipur Netralaya is the premier eye hospital in Jaipur, Rajasthan. Rated the top eye clinic for advanced cataract surgery, retina treatments, and glaucoma care by expert specialists."
         schema={localBusinessSchema}
       />
       <Hero />
-      
+
       {/* Quick Links Section */}
       <section className="py-20 bg-slate-50">
         <div className="container mx-auto px-6">

@@ -19,12 +19,12 @@ export default function Navbar() {
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-700 ease-[0.16,1,0.3,1] ${scrolled || mobileMenuOpen ? 'bg-background/95 backdrop-blur-3xl border-b border-slate-200 py-4 md:py-6' : 'bg-transparent py-4 md:py-10'}`}>
       <div className="container mx-auto px-6 flex items-center justify-between">
-        <Link to="/" className="flex items-center gap-2 group" onClick={closeMenu}>
+        <Link to="/" className="flex items-center gap-2 group flex-shrink-0" onClick={closeMenu}>
           <img src="/1000262746.png" alt="Jaipur Netralaya Logo" className="h-16 md:h-24 lg:h-28 w-auto object-contain transition-all duration-300" />
         </Link>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex items-center gap-8 lg:gap-12">
+        <div className="hidden xl:flex items-center gap-8">
           <Link to="/about" className="font-sans text-xs tracking-[0.2em] uppercase text-slate-600 hover:text-slate-900 transition-colors">Legacy</Link>
           <Link to="/treatments" className="font-sans text-xs tracking-[0.2em] uppercase text-slate-600 hover:text-slate-900 transition-colors">Clinical</Link>
           <Link to="/doctors" className="font-sans text-xs tracking-[0.2em] uppercase text-slate-600 hover:text-slate-900 transition-colors">Surgeons</Link>
@@ -37,7 +37,7 @@ export default function Navbar() {
         </div>
 
         {/* Mobile Hamburger Icon */}
-        <div className="md:hidden flex items-center">
+        <div className="xl:hidden flex items-center">
           <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="text-slate-900 p-2 focus:outline-none">
             {mobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
@@ -46,7 +46,7 @@ export default function Navbar() {
 
       {/* Mobile Menu Dropdown */}
       {mobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 bg-background/95 backdrop-blur-3xl border-b border-slate-200 shadow-xl overflow-hidden flex flex-col py-6 px-6 gap-6">
+        <div className="xl:hidden absolute top-full left-0 right-0 bg-background/95 backdrop-blur-3xl border-b border-slate-200 shadow-xl overflow-hidden flex flex-col py-6 px-6 gap-6">
           <Link to="/about" onClick={closeMenu} className="font-sans text-sm tracking-[0.2em] uppercase text-slate-700 hover:text-accent-500 transition-colors block py-2">Legacy</Link>
           <Link to="/treatments" onClick={closeMenu} className="font-sans text-sm tracking-[0.2em] uppercase text-slate-700 hover:text-accent-500 transition-colors block py-2">Clinical</Link>
           <Link to="/doctors" onClick={closeMenu} className="font-sans text-sm tracking-[0.2em] uppercase text-slate-700 hover:text-accent-500 transition-colors block py-2">Surgeons</Link>

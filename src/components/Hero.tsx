@@ -1,5 +1,6 @@
 import { useRef, useEffect, Suspense } from 'react';
 import { motion, useInView } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
 import gsap from 'gsap';
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
 import { useTexture, MeshDistortMaterial, Sphere, Environment } from '@react-three/drei';
@@ -50,6 +51,7 @@ function LiquidEye() {
 export default function Hero() {
   const containerRef = useRef<HTMLDivElement>(null);
   const isInView = useInView(containerRef);
+  const navigate = useNavigate();
 
   useEffect(() => {
     // Optimized Parallax effect using quickTo to prevent tween spam
@@ -116,6 +118,7 @@ export default function Hero() {
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1.2, delay: 1.1, ease: [0.16, 1, 0.3, 1] }}
+          onClick={() => navigate('/appointment')}
           className="group relative px-10 py-5 bg-accent-500 text-white rounded-full font-display font-semibold text-lg overflow-hidden transition-all hover:scale-105 duration-500 pointer-events-auto"
         >
           <div className="absolute inset-0 bg-accent-600 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500 ease-out z-0"></div>

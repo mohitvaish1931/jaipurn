@@ -13,10 +13,28 @@ export default function Footer() {
             <p className="text-slate-500 font-sans text-sm font-light max-w-sm mb-8">
               <strong>Areas Served in Jaipur:</strong> Gopalpura Bypass, Vaishali Nagar, Malviya Nagar, Mansarovar, Pratap Nagar, and all surrounding regions of Rajasthan.
             </p>
-            <div className="flex flex-col gap-2">
-              <a href="tel:9828892342" className="text-slate-900 font-display text-xl hover:text-accent-500 transition-colors">+91 98288 92342</a>
-              <a href="tel:9799772342" className="text-slate-900 font-display text-xl hover:text-accent-500 transition-colors">+91 97997 72342</a>
-              <span className="text-slate-500 text-sm font-sans uppercase tracking-widest">Emergency Call Available</span>
+            <div className="flex flex-col xl:flex-row gap-8 xl:items-center">
+              <div className="flex flex-col gap-2">
+                <a href="tel:9828892342" className="text-slate-900 font-display text-xl hover:text-accent-500 transition-colors">+91 98288 92342</a>
+                <a href="tel:9799772342" className="text-slate-900 font-display text-xl hover:text-accent-500 transition-colors">+91 97997 72342</a>
+                <span className="text-slate-500 text-sm font-sans uppercase tracking-widest">Emergency Call Available</span>
+                <a href="https://www.google.com/maps/place/26%C2%B052'05.5%22N+75%C2%B046'43.7%22E/@26.8682022,75.7762413,17z/data=!3m1!4b1!4m4!3m3!8m2!3d26.8682022!4d75.7788162?hl=en&entry=ttu&g_ep=EgoyMDI2MDkxMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" className="text-accent-500 hover:text-accent-600 font-sans text-sm font-medium transition-colors mt-2 inline-flex items-center gap-1">
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                  View on Google Maps
+                </a>
+              </div>
+              <div className="w-full xl:w-64 h-32 rounded-xl overflow-hidden shadow-sm border border-slate-200 flex-shrink-0">
+                <iframe 
+                  src="https://maps.google.com/maps?q=26.8682022,75.7788162&z=15&output=embed" 
+                  width="100%" 
+                  height="100%" 
+                  style={{ border: 0 }} 
+                  allowFullScreen 
+                  loading="lazy" 
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Jaipur Netralaya Location"
+                ></iframe>
+              </div>
             </div>
           </div>
           

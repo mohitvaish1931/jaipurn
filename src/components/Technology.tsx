@@ -20,9 +20,8 @@ export default function Technology() {
   return (
     <section ref={containerRef} className="py-32 bg-surface relative overflow-hidden">
       <div className="container mx-auto px-6 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
-          
-          <div className="order-2 lg:order-1 relative rounded-[2rem] overflow-hidden aspect-[3/4] md:aspect-[4/5] border border-slate-200 shadow-xl">
+        <div className="max-w-2xl mx-auto items-center">
+          <div className="relative rounded-[2rem] overflow-hidden aspect-[3/4] md:aspect-[4/5] border border-slate-200 shadow-xl">
             <motion.div style={{ y: imageY }} className="absolute inset-[-10%] w-[120%] h-[120%] will-change-transform flex items-center justify-center">
               <video 
                 src="/WhatsApp Video 2026-07-07 at 00.03.42.mp4" 
@@ -50,28 +49,6 @@ export default function Technology() {
               className="absolute top-0 left-0 w-full h-[2px] bg-accent-500 shadow-[0_0_20px_rgba(14,165,233,0.8)] opacity-30"
             />
           </div>
-
-          <div className="order-1 lg:order-2">
-            <span className="text-xs tracking-[0.3em] text-accent-500 uppercase font-sans mb-6 block">Infrastructure</span>
-            <h2 className="font-display text-5xl md:text-6xl font-medium text-slate-900 mb-12 leading-[1.1] tracking-tight">
-              Advanced Technology <br/> <span className="text-slate-500">For Your Eyes.</span>
-            </h2>
-            
-            <div className="space-y-12">
-              {features.map((feature, i) => (
-                <div key={i} className="group cursor-default">
-                  <div className="flex items-center gap-6 mb-4">
-                    <span className="font-sans text-accent-500/50 text-sm tracking-widest">0{i+1}</span>
-                    <h3 className="font-display text-2xl text-slate-800 group-hover:text-slate-900 transition-colors">{feature.title}</h3>
-                  </div>
-                  <p className="font-sans text-slate-500 font-light text-lg pl-12 leading-relaxed">
-                    {feature.desc}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-
         </div>
       </div>
     </section>

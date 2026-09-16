@@ -11,9 +11,9 @@ export default function AboutPage() {
         description="Learn about Jaipur Netralaya's legacy of excellence. As the leading eye care and laser center in Jaipur, we utilize state-of-the-art technology for world-class retina surgeries."
       />
       
+      <Technology />
       <About />
       <Process />
-      <Technology />
     </div>
   );
 }

@@ -10,18 +10,22 @@ interface InputFieldProps {
   onFocus: (id: string) => void;
   onBlur: (value: null) => void;
   isFocused: boolean;
+  min?: string;
+  max?: string;
 }
 
-const InputField = ({ id, type = 'text', placeholder, value, onChange, onFocus, onBlur, isFocused }: InputFieldProps) => (
+const InputField = ({ id, type = 'text', placeholder, value, onChange, onFocus, onBlur, isFocused, min, max }: InputFieldProps) => (
   <div className="relative mb-12">
     <input
       type={type}
       id={id}
       value={value}
+      min={min}
+      max={max}
       onChange={(e) => onChange(id, e.target.value)}
       onFocus={() => onFocus(id)}
       onBlur={() => onBlur(null)}
-      className="w-full bg-transparent border-b border-slate-200 focus:border-transparent text-slate-900 pb-4 outline-none transition-all placeholder-slate-400 font-sans text-xl font-light"
+      className="w-full bg-transparent border-b border-slate-200 focus:border-transparent text-slate-900 pb-4 outline-none transition-all placeholder-slate-400 font-sans text-xl font-light [&::-webkit-calendar-picker-indicator]:cursor-pointer"
       placeholder={placeholder}
       required
     />
@@ -47,6 +51,8 @@ export default function Appointment() {
   const handleChange = (id: string, value: string) => {
     setFormData(prev => ({ ...prev, [id]: value }));
   };
+
+  const today = new Date().toISOString().split('T')[0];
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -97,7 +103,7 @@ export default function Appointment() {
                 <InputField id="name" placeholder="Legal Full Name" value={formData.name} onChange={handleChange} onFocus={setFocusedField} onBlur={setFocusedField} isFocused={focusedField === 'name'} />
                 <InputField id="phone" placeholder="Contact Number" value={formData.phone} onChange={handleChange} onFocus={setFocusedField} onBlur={setFocusedField} isFocused={focusedField === 'phone'} />
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12">
-                  <InputField id="date" type="text" placeholder="Preferred Date (DD/MM)" value={formData.date} onChange={handleChange} onFocus={setFocusedField} onBlur={setFocusedField} isFocused={focusedField === 'date'} />
+                  <InputField id="date" type="date" placeholder="Preferred Date" value={formData.date} onChange={handleChange} onFocus={setFocusedField} onBlur={setFocusedField} isFocused={focusedField === 'date'} min={today} />
                   <InputField id="time" type="text" placeholder="Time Frame" value={formData.time} onChange={handleChange} onFocus={setFocusedField} onBlur={setFocusedField} isFocused={focusedField === 'time'} />
                 </div>
                 

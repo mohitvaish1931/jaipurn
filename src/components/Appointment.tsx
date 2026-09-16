@@ -52,10 +52,25 @@ export default function Appointment() {
     setFormData(prev => ({ ...prev, [id]: value }));
   };
 
-  const today = new Date().toISOString().split('T')[0];
+  const getLocalDateString = (date: Date) => {
+    const year = date.getFullYear();
+    const month = String(date.getMonth() + 1).padStart(2, '0');
+    const day = String(date.getDate()).padStart(2, '0');
+    return `${year}-${month}-${day}`;
+  };
+
+  const tomorrow = new Date();
+  tomorrow.setDate(tomorrow.getDate() + 1);
+  const minDate = getLocalDateString(tomorrow);
+  const today = getLocalDateString(new Date());
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+
+    if (formData.date && formData.date <= today) {
+      alert('Please select a date from tomorrow onward. Same-day bookings are not available.');
+      return;
+    }
     
     // Constructing WhatsApp Message
     const whatsappNumber = "919828892342";
@@ -103,7 +118,7 @@ export default function Appointment() {
                 <InputField id="name" placeholder="Legal Full Name" value={formData.name} onChange={handleChange} onFocus={setFocusedField} onBlur={setFocusedField} isFocused={focusedField === 'name'} />
                 <InputField id="phone" placeholder="Contact Number" value={formData.phone} onChange={handleChange} onFocus={setFocusedField} onBlur={setFocusedField} isFocused={focusedField === 'phone'} />
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12">
-                  <InputField id="date" type="date" placeholder="Preferred Date" value={formData.date} onChange={handleChange} onFocus={setFocusedField} onBlur={setFocusedField} isFocused={focusedField === 'date'} min={today} />
+                  <InputField id="date" type="date" placeholder="Preferred Date" value={formData.date} onChange={handleChange} onFocus={setFocusedField} onBlur={setFocusedField} isFocused={focusedField === 'date'} min={minDate} />
                   <InputField id="time" type="text" placeholder="Time Frame" value={formData.time} onChange={handleChange} onFocus={setFocusedField} onBlur={setFocusedField} isFocused={focusedField === 'time'} />
                 </div>
                 
